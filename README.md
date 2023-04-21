@@ -351,6 +351,7 @@ select STUDENT_NO 학번, student_name 이름, to_char(ENTRANCE_DATE, 'YYYY-MM-D
 ```
 
 #### 실행 결과
+![1](https://user-images.githubusercontent.com/116356234/233568511-ee7950d5-e4c7-40b6-9fb5-e9e8a1340ca1.png)
 
   
 <hr>
@@ -368,6 +369,7 @@ select PROFESSOR_NAME,PROFESSOR_SSN
 ```
   
 #### 실행 결과
+![2](https://user-images.githubusercontent.com/116356234/233568518-1cd68b40-b5db-4d5f-b798-0e2ab2c154eb.png)
 
 
 <hr>
@@ -387,6 +389,7 @@ select *
 ```
 
 #### 실행 결과
+![3](https://user-images.githubusercontent.com/116356234/233568521-b41c25ed-7025-4228-8c71-80a45a565028.png)
 
 
 <hr>
@@ -403,6 +406,7 @@ select substr(PROFESSOR_NAME,2)
 ```
 
 #### 실행 결과
+![4](https://user-images.githubusercontent.com/116356234/233568523-45166986-b29c-452d-aa05-8dbf77bfa6a4.png)
 
 
 <hr>
@@ -420,6 +424,7 @@ select student_no,STUDENT_NAME
 ```
 
 #### 실행 결과
+![5](https://user-images.githubusercontent.com/116356234/233568528-cfe24763-6cbe-417c-9d6b-a1b7eaa2b459.png)
 
 
 <hr>
@@ -444,6 +449,7 @@ from dual
 ```
 
 #### 실행 결과
+![6](https://user-images.githubusercontent.com/116356234/233568533-e1687389-39b9-490b-8df9-c820c210b22b.png)
 
 
 <hr>
@@ -464,6 +470,7 @@ select to_char(to_Date('99/10/11','RR/MM/DD'),'YYYY"년"MM"월"DD"일"')
 ```
 
 #### 실행 결과
+![7](https://user-images.githubusercontent.com/116356234/233568538-a5612627-7618-4396-8bdf-f66f8d059e90.png)
 
 
 <hr>
@@ -481,6 +488,7 @@ select STUDENT_NO, STUDENT_NAME
 ```
 
 #### 실행 결과
+![8](https://user-images.githubusercontent.com/116356234/233568540-0104c633-2778-4c57-b86c-cf129c4f0791.png)
 
 
 <hr>
@@ -498,7 +506,8 @@ select round(avg(g.POINT),1) 평점
 ```
 
 #### 실행 결과
-  
+![9](https://user-images.githubusercontent.com/116356234/233568542-ad19243b-a72e-40ca-b69e-a17c7b30ff79.png)
+
 
 <hr>
 
@@ -515,7 +524,8 @@ select DEPARTMENT_NO 학과번호, count(DEPARTMENT_NO) "학생수(명)"
 ```
 
 #### 실행 결과
-  
+![10](https://user-images.githubusercontent.com/116356234/233568544-d26d6d5a-e067-4508-96d2-ea5f77ca0058.png)
+
 <hr>
 
 #### 문제11
@@ -530,6 +540,7 @@ select  count(*)
 ```
 
 #### 실행 결과
+![11](https://user-images.githubusercontent.com/116356234/233568546-dc741292-b8b7-4b3f-a52f-4765341c1db6.png)
   
 <hr>
 
@@ -547,7 +558,8 @@ select substr(g.TERM_NO,1,4) 년도, round(avg(g.POINT),1) "년도 별 평점"
 ```
 
 #### 실행 결과
-  
+![12](https://user-images.githubusercontent.com/116356234/233568549-6e7460a6-6978-4aef-b76d-b1f98a086ee2.png)
+
 <hr>
 
 #### 문제13
@@ -564,7 +576,8 @@ select d.DEPARTMENT_NO 학과코드명, count(s_tab.ABSENCE_YN) "휴학생 수"
 ```
 
 #### 실행 결과
-  
+![13](https://user-images.githubusercontent.com/116356234/233568551-d035959d-3595-4637-ab11-ff285480207f.png)
+
 <hr>
 
 #### 문제14
@@ -581,7 +594,8 @@ select student_name, count(*)
 ```
 
 #### 실행 결과
-  
+![14](https://user-images.githubusercontent.com/116356234/233568556-fe41dd8a-7437-4313-a077-0e42b02e3ffd.png)
+    
 <hr>
 
 #### 문제15
@@ -598,7 +612,7 @@ select NVL(임시년도,' ') 년도, NVL(임시학기,' ') 학기, 평점
 ```
 
 #### 실행 결과
-  
+![15](https://user-images.githubusercontent.com/116356234/233568559-73e1d6b5-e9cd-4a17-b891-0b98ea538daa.png)      
   
 </div>
 </details>
