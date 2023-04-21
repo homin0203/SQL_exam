@@ -27,7 +27,8 @@
 
 
 #### 내 코드
-
+```SQL
+  
 ```
   
 #### 실행 결과
@@ -150,7 +151,7 @@
 ![05_실습_KH_춘_TechUniv_Table기술서_3](https://user-images.githubusercontent.com/116356234/233554049-31a43883-e603-4c8b-a50c-46fc1f8329df.png)
 
 ### DDL & DML
-[→ 초기 DDL & DML SQL로 이동](https://github.com/homin0203/SQL_exam/blob/main/chun/%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_KH_%EC%B6%98_TechUniv_%EC%8B%A4%EC%8A%B5.sql)  
+[→ DDL & DML SQL문 보기](https://github.com/homin0203/SQL_exam/blob/main/chun/%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_KH_%EC%B6%98_TechUniv_%EC%8B%A4%EC%8A%B5.sql)  
 
 </div>
 </details>
@@ -158,6 +159,8 @@
 <details>
 <summary><h3>1️⃣ SELECT_Basic(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
+ 
+[→ SELECT_Basic SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/chun/KH_SQL01_SELECT.sql)  
 
 #### 문제1
 ![1](https://user-images.githubusercontent.com/116356234/233560082-94db668d-fe43-4de7-a982-88cdf106e753.png)
@@ -198,7 +201,6 @@ select STUDENT_NAME
     from TB_STUDENT
     where ABSENCE_YN = 'Y' 
         and STUDENT_SSN LIKE '_______2%'
---        and substr(STUDENT_SSN,8,1) = '2'
         and DEPARTMENT_NO = (select DEPARTMENT_NO
                                 from TB_DEPARTMENT
                                 where DEPARTMENT_NAME = '국어국문학과')
@@ -235,7 +237,6 @@ select student_name
 select DEPARTMENT_NAME, category
     from TB_DEPARTMENT
     where CAPACITY >= 20 and CAPACITY <= 30
---    where CAPACITY between 19 and 31
 ;
 ```
 
@@ -335,12 +336,18 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 <summary><h3>2️⃣ SELECT_Function(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
   
+[→ SELECT_Function SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/chun/KH_SQL02_SELECT.sql)  
+  
 #### 문제1
 ![1](https://user-images.githubusercontent.com/116356234/233565412-3a02c16a-9f7c-42ec-82a4-fcf0533212f8.png)
 
 #### 내 코드
 ```SQL
-
+select STUDENT_NO 학번, student_name 이름, to_char(ENTRANCE_DATE, 'YYYY-MM-DD') 입학년도
+    from TB_STUDENT
+    where DEPARTMENT_NO = '002'
+    order by ENTRANCE_DATE
+;
 ```
 
 #### 실행 결과
@@ -353,7 +360,11 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 
 #### 내 코드
-
+```SQL
+select PROFESSOR_NAME,PROFESSOR_SSN
+    from TB_PROFESSOR
+    where PROFESSOR_NAME not LIKE '___'
+;
 ```
   
 #### 실행 결과
@@ -367,7 +378,12 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select * 
+    from(select PROFESSOR_NAME 교수이름, to_char(sysdate,'yy')+100-substr(PROFESSOR_SSN,1,2) 나이
+            from TB_PROFESSOR
+            where substr(PROFESSOR_SSN,8,1) = '1')
+    order by 나이
+;  
 ```
 
 #### 실행 결과
@@ -381,7 +397,9 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select substr(PROFESSOR_NAME,2)
+    from TB_PROFESSOR
+;
 ```
 
 #### 실행 결과
@@ -394,7 +412,11 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select * from TB_STUDENT;
+select student_no,STUDENT_NAME
+    from TB_STUDENT
+    where (to_char(ENTRANCE_DATE,'yyyy')-to_char(to_date(substr(STUDENT_SSN,1,6)),'RRRR')) > 19
+;
 ```
 
 #### 실행 결과
@@ -408,7 +430,17 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select case to_char(next_day('2020/12/25','일'),'dd')-'25' 
+            when 1 then '토요일'
+            when 2 then '금요일'
+            when 3 then '목요일'
+            when 4 then '수요일'
+            when 5 then '화요일'
+            when 6 then '월요일'
+            when 7 then '일요일'
+            else '없음' end 클스요일
+from dual
+;
 ```
 
 #### 실행 결과
@@ -422,7 +454,13 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select to_char(to_Date('99/10/11','YY/MM/DD'),'YYYY"년"MM"월"DD"일"')
+        ,to_char(to_Date('49/10/11','YY/MM/DD'),'YYYY"년"MM"월"DD"일"') 
+    from dual
+union
+select to_char(to_Date('99/10/11','RR/MM/DD'),'YYYY"년"MM"월"DD"일"')
+        ,to_char(to_Date('49/10/11','RR/MM/DD'),'YYYY"년"MM"월"DD"일"') 
+    from dual;
 ```
 
 #### 실행 결과
@@ -436,7 +474,10 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select STUDENT_NO, STUDENT_NAME 
+    from TB_STUDENT
+    where student_no not LIKE 'A%'
+;
 ```
 
 #### 실행 결과
@@ -450,7 +491,10 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select round(avg(g.POINT),1) 평점
+    from TB_STUDENT s join tb_grade g using (STUDENT_NO)
+    where STUDENT_NAME = '한아름'
+;
 ```
 
 #### 실행 결과
@@ -463,7 +507,11 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select DEPARTMENT_NO 학과번호, count(DEPARTMENT_NO) "학생수(명)"
+    from TB_STUDENT
+    group by DEPARTMENT_NO
+    order by DEPARTMENT_NO
+;
 ```
 
 #### 실행 결과
@@ -475,7 +523,10 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select  count(*)
+    from TB_STUDENT
+    where COACH_PROFESSOR_NO is null
+;
 ```
 
 #### 실행 결과
@@ -487,7 +538,12 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select substr(g.TERM_NO,1,4) 년도, round(avg(g.POINT),1) "년도 별 평점"
+    from TB_STUDENT s join tb_grade g on s.STUDENT_NO = g.STUDENT_NO
+    where s.STUDENT_NO = 'A112113'
+    group by substr(g.TERM_NO,1,4)
+    order by substr(g.TERM_NO,1,4)
+;
 ```
 
 #### 실행 결과
@@ -499,7 +555,12 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select d.DEPARTMENT_NO 학과코드명, count(s_tab.ABSENCE_YN) "휴학생 수"
+    from TB_DEPARTMENT d 
+    left join (select * from TB_STUDENT s where s.ABSENCE_YN = 'Y') s_tab on s_tab.DEPARTMENT_NO = d.DEPARTMENT_NO
+    group by d.DEPARTMENT_NO
+    order by d.DEPARTMENT_NO
+;
 ```
 
 #### 실행 결과
@@ -511,7 +572,12 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select student_name, count(*)
+    from TB_STUDENT
+    group by STUDENT_NAME
+    having count(*) >= 2
+    order by STUDENT_NAME
+;
 ```
 
 #### 실행 결과
@@ -523,7 +589,12 @@ select STUDENT_NO,STUDENT_NAME,STUDENT_SSN
 
 #### 내 코드
 ```SQL
-
+select NVL(임시년도,' ') 년도, NVL(임시학기,' ') 학기, 평점
+    from(select substr(g.TERM_NO,1,4) 임시년도, substr(g.TERM_NO,5,2) 임시학기, round(avg(g.point),1) 평점
+            from TB_STUDENT s join tb_grade g on s.STUDENT_NO = g.STUDENT_NO
+            where s.STUDENT_NO = 'A112113'
+            group by rollup(substr(g.TERM_NO,1,4), substr(g.TERM_NO,5,2)))
+;
 ```
 
 #### 실행 결과
