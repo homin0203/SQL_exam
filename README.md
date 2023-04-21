@@ -577,6 +577,7 @@ select d.DEPARTMENT_NO 학과코드명, count(s_tab.ABSENCE_YN) "휴학생 수"
 
 #### 실행 결과
 ![13](https://user-images.githubusercontent.com/116356234/233568551-d035959d-3595-4637-ab11-ff285480207f.png)
+~ 63행 생략
 
 <hr>
 
