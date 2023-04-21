@@ -27,7 +27,7 @@
 <div markdown="1">
 
 #### 문제1
-![1](https://user-images.githubusercontent.com/116356234/233558854-a2fe9ad3-2f9f-4132-a81c-00686746745a.png)
+![1](https://user-images.githubusercontent.com/116356234/233560082-94db668d-fe43-4de7-a982-88cdf106e753.png)
 
 #### 내 코드
 
@@ -36,7 +36,7 @@
 <hr>
 
 #### 문제2
-![2](https://user-images.githubusercontent.com/116356234/233558858-0c8f194c-63c3-4f58-aed6-ba85babcc832.png)
+![2](https://user-images.githubusercontent.com/116356234/233560087-0e4ea461-1266-4f49-9741-495f0e72ad29.png)
 
 #### 내 코드
 
@@ -45,7 +45,7 @@
 <hr>
 
 #### 문제3
-![3](https://user-images.githubusercontent.com/116356234/233558862-c1610c76-13c8-4075-ab91-b397d9fc7d09.png)
+![3](https://user-images.githubusercontent.com/116356234/233560088-51a38f75-d3fb-488d-a62e-54c93c846fce.png)
 
 #### 내 코드
 
@@ -54,8 +54,7 @@
 <hr>
 
 #### 문제4
-![4](https://user-images.githubusercontent.com/116356234/233558863-f0feb505-6279-4807-9b6a-41ea7dbb4368.png)
-
+![4](https://user-images.githubusercontent.com/116356234/233560092-a5b3d63d-62f1-4093-a420-59cb1e1441a2.png)
 
 #### 내 코드
 
@@ -64,8 +63,7 @@
 <hr>
 
 #### 문제5
-![5](https://user-images.githubusercontent.com/116356234/233558865-028b2bc6-297c-4844-b3d7-6ae626f1f30f.png)
-
+![5](https://user-images.githubusercontent.com/116356234/233560094-b3cd8184-a6ff-43ca-b434-36677f38bd24.png)
 
 #### 내 코드
 
@@ -74,8 +72,7 @@
 <hr>
 
 #### 문제6
-![6](https://user-images.githubusercontent.com/116356234/233558868-ab6cbf10-6ce4-48e0-a986-67fada472d34.png)
-
+![6](https://user-images.githubusercontent.com/116356234/233560097-8047da8d-5601-43b2-988b-06aace2724e5.png)
 
 #### 내 코드
 
@@ -85,7 +82,7 @@
 
 #### 문제7
 
-<div align="center"><img src="https://user-images.githubusercontent.com/116356234/233558869-2f7a539f-3db2-4ffc-a4b0-808470278c82.png" height="100"></div>
+<img src="https://user-images.githubusercontent.com/116356234/233560100-687c51e1-412f-400f-8c26-430558a3fa9b.png" height="110">
 
 #### 내 코드
 
@@ -94,8 +91,7 @@
 <hr>
 
 #### 문제8
-![8](https://user-images.githubusercontent.com/116356234/233558870-0123f0f0-c0d2-4aef-b0ec-c7bc67a59a95.png)
-
+![8](https://user-images.githubusercontent.com/116356234/233560102-5c8edb8b-5a6a-41a9-8955-2dfc8964fed7.png)
 
 #### 내 코드
 
@@ -104,7 +100,7 @@
 <hr>
 
 #### 문제9
-![9](https://user-images.githubusercontent.com/116356234/233558871-910cb10a-d964-4688-b80b-aa9527c56d0b.png)
+![9](https://user-images.githubusercontent.com/116356234/233560103-84064952-f629-4f2b-854e-6160971413f7.png)
 
 #### 내 코드
 
@@ -113,7 +109,7 @@
 <hr>
 
 #### 문제10
-![10](https://user-images.githubusercontent.com/116356234/233558872-570d4363-3763-4993-a6e6-c0436a6363cf.png)
+![10](https://user-images.githubusercontent.com/116356234/233560107-23ac3ae8-0622-46c3-bab5-d5d5e164ed40.png)
 
 #### 내 코드
 
