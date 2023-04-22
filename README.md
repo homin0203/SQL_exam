@@ -1360,6 +1360,249 @@ DELETE TB_GRADE G
 <summary><h3>1️⃣ SELECT(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
   
+#### 문제1
+![1](https://user-images.githubusercontent.com/116356234/233773760-81649867-fd53-4778-bd0c-ecb349b095b9.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+  
+<hr>
+
+#### 문제2
+![2](https://user-images.githubusercontent.com/116356234/233773763-f11b6040-3970-4907-b249-1424699d6ec5.png)
+
+
+#### 내 코드
+```SQL
+  
+```
+  
+#### 실행 결과
+
+
+<hr>
+
+#### 문제3
+![3](https://user-images.githubusercontent.com/116356234/233773764-95b1e515-9340-458e-847e-dd11cfff63d9.png)
+
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제4
+![4](https://user-images.githubusercontent.com/116356234/233773765-c482ecc8-6c0e-4f60-9db8-6cd5fe2efb19.png)
+
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제5
+![5](https://user-images.githubusercontent.com/116356234/233773771-adbbb4b9-abce-4fda-8f0b-17937b9d5c04.png)
+
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제6
+![6](https://user-images.githubusercontent.com/116356234/233773772-49953b1a-4ebc-41d1-8e50-cc503a37f99e.png)
+
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제7
+![7](https://user-images.githubusercontent.com/116356234/233773778-eed39151-dffc-4994-824e-652128fc1d5f.png)
+
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제8
+![8](https://user-images.githubusercontent.com/116356234/233773780-ef535775-07af-424c-a9b0-3a5e5218a8ba.png)
+
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제9
+![9](https://user-images.githubusercontent.com/116356234/233773781-ef46c5b8-5027-4813-95f3-ebd867c29302.png)
+
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+  
+
+<hr>
+
+#### 문제10
+![10](https://user-images.githubusercontent.com/116356234/233773783-c5920408-620c-4e5e-b2b5-bbbf733ef89e.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제11
+![11](https://user-images.githubusercontent.com/116356234/233773786-02e1c3e4-fff3-45f7-aa04-75e79bd8289b.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제12
+![12](https://user-images.githubusercontent.com/116356234/233773787-6ac78fe9-47c0-47da-8f3a-59edc6a6665b.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제13
+![13](https://user-images.githubusercontent.com/116356234/233773789-ec3bf4ac-820f-4aee-a7a3-7aa7cb1bdfc3.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제14
+![14](https://user-images.githubusercontent.com/116356234/233773790-a2b65e9d-1c79-46d7-ba35-4b0ecd89fc4d.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제15
+![15](https://user-images.githubusercontent.com/116356234/233773793-c95d5809-6ff9-4573-8973-848710cd11c7.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제16
+![16](https://user-images.githubusercontent.com/116356234/233773794-573f176b-8c84-4a7f-8315-6e280cc96e65.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제17
+![17](https://user-images.githubusercontent.com/116356234/233773796-5a014fb6-1c15-4cb7-a4e9-0a0f2ac35094.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제18
+![18](https://user-images.githubusercontent.com/116356234/233773798-92f7a58c-a9b1-41ee-a01b-086f5c2c260e.png)
+
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제19
+![19](https://user-images.githubusercontent.com/116356234/233773799-c24e47c6-c7dc-4ef3-8934-fad3d0457bbb.png)
+  
+#### 내 코드
+```SQL
+
+```
+
+#### 실행 결과
+  
 </div>
 </details>
 
