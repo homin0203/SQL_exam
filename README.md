@@ -624,6 +624,8 @@ select NVL(임시년도,' ') 년도, NVL(임시학기,' ') 학기, 평점
 <details>
 <summary><h3>3️⃣ SELECT_Option(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
+
+[→ SELECT_Option SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/chun/KH_SQL03_SELECT.sql)  
   
 #### 문제1
 ![1](https://user-images.githubusercontent.com/116356234/233768278-3a7dd42a-9d24-4d9d-b3a3-485c6fca6b62.png)
@@ -1006,6 +1008,8 @@ select d.DEPARTMENT_NAME "계열 학과명", round(avg(g.POINT),1) "전공평점
 <details>
 <summary><h3>4️⃣ DDL(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
+
+[→ DDL SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/chun/KH_SQL04_DDL.sql)  
   
 #### 문제1
 ![1](https://user-images.githubusercontent.com/116356234/233769919-b361622c-f067-416b-8d72-262317c9a74d.png)
