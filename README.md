@@ -1228,6 +1228,127 @@ SELECT C.CLASS_NO,C.CLASS_NAME, COUNT(G.STUDENT_NO)
 <summary><h3>5️⃣ DML(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
   
+[→ DML SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/chun/KH_SQL05_DML.sql)  
+  
+#### 문제1
+![1](https://user-images.githubusercontent.com/116356234/233770368-27b37af9-06d0-412d-82fa-3c3640eed25b.png)
+
+
+#### 내 코드
+```SQL
+INSERT INTO TB_CLASS_TYPE VALUES('01','전공필수');
+INSERT INTO TB_CLASS_TYPE VALUES('02','전공선택');
+INSERT INTO TB_CLASS_TYPE VALUES('03','교양필수');
+INSERT INTO TB_CLASS_TYPE VALUES('04','교양선택');
+INSERT INTO TB_CLASS_TYPE VALUES('05','논문지도');
+COMMIT;
+```
+
+  
+<hr>
+
+#### 문제2
+![2](https://user-images.githubusercontent.com/116356234/233770369-7c645809-e2d8-4eda-860e-1f84e908ebe1.png)
+
+
+#### 내 코드
+```SQL
+CREATE TABLE TB_학생일반정보 AS SELECT * FROM VW_학생일반정보;
+```
+
+
+<hr>
+
+#### 문제3
+![3](https://user-images.githubusercontent.com/116356234/233770371-c153d55e-764a-44b5-b402-f135b4ddc07a.png)
+
+
+#### 내 코드
+```SQL
+CREATE TABLE TB_국어국문학과 AS
+SELECT S.STUDENT_NO 학번, S.STUDENT_NAME 학생이름
+        , TO_CHAR(TO_DATE(SUBSTR(S.STUDENT_SSN,1,2),'RR'),'YYYY') 출생년도
+        , P.PROFESSOR_NAME 교수이름
+    FROM TB_STUDENT S JOIN TB_PROFESSOR P ON S.COACH_PROFESSOR_NO = P.PROFESSOR_NO
+    WHERE S.DEPARTMENT_NO = (SELECT D.DEPARTMENT_NO 
+                                FROM TB_DEPARTMENT D 
+                                WHERE D.DEPARTMENT_NAME = '국어국문학과')
+;
+
+```
+
+
+<hr>
+
+#### 문제4
+![4](https://user-images.githubusercontent.com/116356234/233770372-4d9f9651-da3b-4cae-92b1-c33173c82afa.png)
+
+
+#### 내 코드
+```SQL
+UPDATE TB_DEPARTMENT SET CAPACITY = ROUND(CAPACITY*1.1,0);
+```
+
+
+<hr>
+
+#### 문제5
+![5](https://user-images.githubusercontent.com/116356234/233770374-d8ba474d-ffed-425e-bf2f-fc891827bc4b.png)
+
+#### 내 코드
+```SQL
+UPDATE TB_STUDENT 
+    SET STUDENT_ADDRESS = '서울시 종로구 숭인동 181-21'
+    WHERE STUDENT_NO = 'A413042'
+;
+```
+
+
+<hr>
+
+#### 문제6
+![6](https://user-images.githubusercontent.com/116356234/233770375-09b1fc0b-2944-463e-a45d-70bc085dc634.png)
+
+
+
+#### 내 코드
+```SQL
+UPDATE TB_STUDENT SET STUDENT_SSN = SUBSTR(STUDENT_SSN,1,6);
+```
+
+
+<hr>
+
+#### 문제7
+![7](https://user-images.githubusercontent.com/116356234/233770376-9f8c0c02-fcd8-4ccf-8a1a-1165ab1683ba.png)
+
+
+#### 내 코드
+```SQL
+UPDATE TB_GRADE G 
+    SET G.POINT = 3.5 
+    WHERE (G.STUDENT_NO,G.CLASS_NO) = (SELECT S.STUDENT_NO, C.CLASS_NO
+                                            FROM TB_STUDENT S JOIN TB_CLASS C USING(DEPARTMENT_NO)
+                                            WHERE S.STUDENT_NAME = '김명훈' 
+                                            AND C.CLASS_NAME = '피부생리학')
+;
+```
+
+
+<hr>
+
+#### 문제8
+![8](https://user-images.githubusercontent.com/116356234/233770377-8c3bed95-55b3-45c2-ad57-91bda395f8ea.png)
+
+#### 내 코드
+```SQL
+DELETE TB_GRADE G 
+    WHERE G.STUDENT_NO IN (SELECT STUDENT_NO 
+                                FROM TB_STUDENT 
+                                WHERE ABSENCE_YN = 'Y')
+;
+```
+  
 </div>
 </details>
 
