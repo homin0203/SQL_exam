@@ -1007,6 +1007,216 @@ select d.DEPARTMENT_NAME "계열 학과명", round(avg(g.POINT),1) "전공평점
 <summary><h3>4️⃣ DDL(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
   
+#### 문제1
+![1](https://user-images.githubusercontent.com/116356234/233769919-b361622c-f067-416b-8d72-262317c9a74d.png)
+
+#### 내 코드
+```SQL
+DROP TABLE TB_CATEGORY;
+CREATE TABLE TB_CATEGORY(
+    NAME VARCHAR2(10),
+    USE_YN CHAR(1) DEFAULT 'Y'
+);
+```
+  
+<hr>
+
+#### 문제2
+![2](https://user-images.githubusercontent.com/116356234/233769921-81f84571-c250-47ae-a5a7-db4dc36384c6.png)
+
+
+#### 내 코드
+```SQL
+CREATE TABLE TB_CLASS_TYPE(
+    NO VARCHAR2(5) PRIMARY KEY,
+    NAME VARCHAR2(10)
+);  
+```
+
+
+<hr>
+
+#### 문제3
+![3](https://user-images.githubusercontent.com/116356234/233769923-6e0c9fa7-5024-4461-a18d-5b0ccd7e1701.png)
+
+
+#### 내 코드
+```SQL
+ALTER TABLE TB_CATEGORY ADD CONSTRAINT TC_NAME_PK PRIMARY KEY (NAME);
+```
+
+
+<hr>
+
+#### 문제4
+![4](https://user-images.githubusercontent.com/116356234/233769924-0ffa2cf1-60c4-4f4a-97a8-670892f0a4fb.png)
+
+
+#### 내 코드
+```SQL
+ALTER TABLE TB_CLASS_TYPE MODIFY NAME NOT NULL;
+```
+
+
+<hr>
+
+#### 문제5
+![5](https://user-images.githubusercontent.com/116356234/233769925-0f9f539d-92d1-4677-b382-8bb3a547b1c5.png)
+
+
+#### 내 코드
+```SQL
+ALTER TABLE TB_CLASS_TYPE MODIFY (NAME VARCHAR2(20), NO VARCHAR(10));
+ALTER TABLE TB_CATEGORY MODIFY (NAME VARCHAR2(20));
+```
+
+
+<hr>
+
+#### 문제6
+![6](https://user-images.githubusercontent.com/116356234/233769926-0369ff41-d521-435c-96c0-569efaba9505.png)
+
+
+#### 내 코드
+```SQL
+ALTER TABLE TB_CATEGORY RENAME COLUMN  NAME TO CATEGORY_NAME;
+ALTER TABLE TB_CLASS_TYPE RENAME COLUMN NAME TO CLASS_TYPE_NAME;
+ALTER TABLE TB_CLASS_TYPE RENAME COLUMN NO TO CLASS_TYPE_NO;
+```
+
+
+<hr>
+
+#### 문제7
+![7](https://user-images.githubusercontent.com/116356234/233769927-8f8f03a6-7742-406f-bdb4-9bfb42166c23.png)
+
+
+#### 내 코드
+```SQL
+ALTER TABLE TB_CATEGORY RENAME CONSTRAINTS TC_NAME_PK TO PK_CATEGORY_NAME;
+ALTER TABLE TB_CLASS_TYPE RENAME CONSTRAINTS SYS_C007144 TO PK_CLASS_TYPE_NAME;
+```
+
+
+<hr>
+
+#### 문제8
+![8](https://user-images.githubusercontent.com/116356234/233769928-2cd50ccf-2be2-4478-890f-7d706da29478.png)
+
+
+#### 내 코드
+```SQL
+INSERT INTO TB_CATEGORY VALUES('공학','Y');
+INSERT INTO TB_CATEGORY VALUES('자연과학','Y');
+INSERT INTO TB_CATEGORY VALUES('의학','Y');
+INSERT INTO TB_CATEGORY VALUES('예체능','Y');
+INSERT INTO TB_CATEGORY VALUES('인문사회','Y');
+COMMIT;
+```
+
+
+<hr>
+
+#### 문제9
+![9](https://user-images.githubusercontent.com/116356234/233769929-8a19615b-c88b-46bb-aa9a-ec4662fa7494.png)
+
+
+#### 내 코드
+```SQL
+ALTER TABLE TB_DEPARTMENT ADD CONSTRAINT FK_DEPARTMENT_CATEGORY 
+                                FOREIGN KEY (CATEGORY) 
+                                REFERENCES TB_CATEGORY(CATEGORY_NAME)
+;
+```
+  
+
+<hr>
+
+#### 문제10
+![10](https://user-images.githubusercontent.com/116356234/233769930-1582ef42-69c0-4e75-b434-3877e3988540.png)
+
+#### 내 코드
+```SQL
+CREATE OR REPLACE VIEW VW_학생일반정보 AS
+    SELECT STUDENT_NO 학번,STUDENT_NAME 학생이름,STUDENT_ADDRESS 주소 FROM TB_STUDENT
+;
+```
+
+<hr>
+
+#### 문제11
+![11](https://user-images.githubusercontent.com/116356234/233769931-af34dd93-4668-463a-a39f-c09ab5363df2.png)
+
+#### 내 코드
+```SQL
+CREATE OR REPLACE VIEW VW_지도면담 AS
+SELECT S.STUDENT_NAME 학생이름,D.DEPARTMENT_NAME 학과이름,P.PROFESSOR_NAME 지도교수이름 
+        FROM TB_STUDENT S JOIN TB_DEPARTMENT D USING(DEPARTMENT_NO)
+                            LEFT JOIN TB_PROFESSOR P ON S.COACH_PROFESSOR_NO = P.PROFESSOR_NO
+        ORDER BY 2
+;
+```
+
+<hr>
+
+#### 문제12
+![12](https://user-images.githubusercontent.com/116356234/233769932-dd1393a2-e506-44f9-8a90-ea4b2f63f096.png)
+
+#### 내 코드
+```SQL
+CREATE OR REPLACE VIEW VW_학과별학생수 AS
+SELECT D.DEPARTMENT_NAME 학과이름, COUNT(S.DEPARTMENT_NO) 학생수 
+    FROM TB_STUDENT S JOIN TB_DEPARTMENT D ON S.DEPARTMENT_NO = D.DEPARTMENT_NO
+    GROUP BY D.DEPARTMENT_NAME
+; 
+```
+
+<hr>
+
+#### 문제13
+![13](https://user-images.githubusercontent.com/116356234/233769934-ccd103b8-0248-4c68-8a6b-cbe6698cdb3a.png)
+
+#### 내 코드
+```SQL
+UPDATE VW_학생일반정보 SET 학생이름 = '권호민' WHERE 학번 = 'A213046';
+COMMIT;
+```
+
+<hr>
+
+#### 문제14
+![14](https://user-images.githubusercontent.com/116356234/233769935-dda091af-60b2-4f37-b770-532e86b1238c.png)
+
+#### 내 코드
+```SQL
+CREATE OR REPLACE VIEW 뷰명 AS
+    SELECT * FROM 테이블명
+    WITH READ ONLY
+;
+```
+  
+<hr>
+
+#### 문제15
+![15](https://user-images.githubusercontent.com/116356234/233769937-3909361a-0539-437e-b794-b98f7dd13885.png)
+  
+#### 내 코드
+```SQL
+SELECT *
+FROM(
+SELECT C.CLASS_NO,C.CLASS_NAME, COUNT(G.STUDENT_NO)
+    FROM TB_GRADE G JOIN TB_CLASS C ON G.CLASS_NO = C.CLASS_NO
+    WHERE G.TERM_NO LIKE '2009%' OR G.TERM_NO LIKE '2008%'
+                                OR G.TERM_NO LIKE '2007%'
+    GROUP BY C.CLASS_NO, C.CLASS_NAME
+    ORDER BY 3 DESC)
+    WHERE ROWNUM <= 3
+;
+```
+
+#### 실행 결과
+![15](https://user-images.githubusercontent.com/116356234/233770171-4b8fb2cb-4793-4f7e-b8b7-f72c2b3023cf.png)
+                    
 </div>
 </details>
 
