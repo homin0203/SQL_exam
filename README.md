@@ -635,7 +635,8 @@ select STUDENT_NAME "학생 이름",STUDENT_ADDRESS 주소지
 ```
 
 #### 실행 결과
-![1_588](https://user-images.githubusercontent.com/116356234/233768958-f9ad2349-a466-4931-bb34-c0a3f7bb7828.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768958-f9ad2349-a466-4931-bb34-c0a3f7bb7828.png" width="450">  
 ~ 588행 생략
   
 <hr>
@@ -654,7 +655,8 @@ select STUDENT_NAME,STUDENT_SSN
 ```
   
 #### 실행 결과
-![2_91](https://user-images.githubusercontent.com/116356234/233768959-95b6979f-03e3-484a-aca5-61115ec81c68.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768959-95b6979f-03e3-484a-aca5-61115ec81c68.png" width="300">  
 ~ 91행 생략
 
 <hr>
@@ -673,7 +675,8 @@ select STUDENT_NAME 학생이름, STUDENT_NO 학번, STUDENT_ADDRESS "거주지 
 ```
 
 #### 실행 결과
-![3](https://user-images.githubusercontent.com/116356234/233768960-3d33e14b-f7fb-4981-9052-bb66a62f57b2.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768960-3d33e14b-f7fb-4981-9052-bb66a62f57b2.png" width="450">  
 
 
 <hr>
@@ -692,7 +695,8 @@ select PROFESSOR_NAME, PROFESSOR_SSN
 ```
 
 #### 실행 결과
-![4](https://user-images.githubusercontent.com/116356234/233768962-82e55e12-0721-416f-a461-e8b318ef4f1c.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768962-82e55e12-0721-416f-a461-e8b318ef4f1c.png" width="350">  
 
 
 <hr>
@@ -711,7 +715,8 @@ select s.student_no, g.point
 ```
 
 #### 실행 결과
-![5](https://user-images.githubusercontent.com/116356234/233768963-a07c8663-d044-42b3-8dd6-f74f16229af3.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768963-a07c8663-d044-42b3-8dd6-f74f16229af3.png" width="290">  
 
 
 <hr>
@@ -729,7 +734,8 @@ select s.STUDENT_NO, s.STUDENT_NAME, d.DEPARTMENT_NAME
 ```
 
 #### 실행 결과
-![6_588](https://user-images.githubusercontent.com/116356234/233768965-8f86c161-f67a-4bee-a24e-752947070bcb.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768965-8f86c161-f67a-4bee-a24e-752947070bcb.png" width="450">  
 ~ 588행 생략
   
 <hr>
@@ -745,7 +751,8 @@ select c.CLASS_NAME, d.DEPARTMENT_NAME
 ```
 
 #### 실행 결과
-![7_882](https://user-images.githubusercontent.com/116356234/233768966-ad7de6ae-86c8-406c-b18f-3304dc348449.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768966-ad7de6ae-86c8-406c-b18f-3304dc348449.png" width="450">  
 ~ 882행 생략
 
 <hr>
@@ -763,7 +770,8 @@ select c.CLASS_NAME, c.DEPARTMENT_NO, p.PROFESSOR_NAME
 ```
 
 #### 실행 결과
-![8_776](https://user-images.githubusercontent.com/116356234/233768967-99a5c4d5-a0f8-4b41-9d53-e2f38ea443bf.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768967-99a5c4d5-a0f8-4b41-9d53-e2f38ea443bf.png" width="450">  
 ~ 776행 생략
 
 <hr>
@@ -784,7 +792,8 @@ select c.CLASS_NAME, p.PROFESSOR_NAME
 ```
 
 #### 실행 결과
-![9_197](https://user-images.githubusercontent.com/116356234/233768968-11600dc2-ca01-4b61-98e6-fe9bc56c8b1a.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768968-11600dc2-ca01-4b61-98e6-fe9bc56c8b1a.png" width="450">  
 ~ 197행 생략
 
 <hr>
@@ -804,7 +813,8 @@ select s.STUDENT_NO,s.STUDENT_NAME, round(avg(g.POINT),1)
 ```
 
 #### 실행 결과
-![10](https://user-images.githubusercontent.com/116356234/233768969-bc8943c8-245d-41d4-81b8-e88bca6ce6da.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768969-bc8943c8-245d-41d4-81b8-e88bca6ce6da.png" width="450">
 
 <hr>
 
@@ -821,7 +831,8 @@ select d.DEPARTMENT_NAME, s.STUDENT_NAME, p.PROFESSOR_NAME
 ```
 
 #### 실행 결과
-![11](https://user-images.githubusercontent.com/116356234/233768970-bbccf685-d333-4456-869f-0b4a3d2135b7.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768970-bbccf685-d333-4456-869f-0b4a3d2135b7.png" width="350">
 
   
 <hr>
@@ -839,7 +850,8 @@ select s.STUDENT_NAME, g.TERM_NO
 ```
 
 #### 실행 결과
-![12](https://user-images.githubusercontent.com/116356234/233768972-3e8996c3-7d33-40b0-b884-dab979b78673.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768972-3e8996c3-7d33-40b0-b884-dab979b78673.png" width="290">
 
   
 <hr>
@@ -858,7 +870,8 @@ select c.CLASS_NAME, d.DEPARTMENT_NAME
 ```
 
 #### 실행 결과
-![13_44](https://user-images.githubusercontent.com/116356234/233768973-b23be4e4-5f8e-4b22-afee-dd17ad24536f.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768973-b23be4e4-5f8e-4b22-afee-dd17ad24536f.png" width="450">
 ~ 44행 생략
   
 <hr>
@@ -877,7 +890,8 @@ select s.student_name, NVL(p.PROFESSOR_NAME,'지도교수 미지정')
 ```
 
 #### 실행 결과
-![14](https://user-images.githubusercontent.com/116356234/233768974-b290aba4-2b29-4da9-bcc0-fbafe541e036.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768974-b290aba4-2b29-4da9-bcc0-fbafe541e036.png" width="450">
 
 <hr>
 
@@ -897,7 +911,8 @@ select s.STUDENT_NO 학번,s.student_name 이름,d.DEPARTMENT_NAME "학과 이�
 ```
 
 #### 실행 결과
-![15_19](https://user-images.githubusercontent.com/116356234/233768975-dc5a585c-224a-45ff-a77f-45c862104403.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768975-dc5a585c-224a-45ff-a77f-45c862104403.png" width="450">
 ~ 19행 생략
   
 <hr>
@@ -917,7 +932,8 @@ select c.CLASS_NO, c.CLASS_NAME, round(avg(g.point),8)
 ```
 
 #### 실행 결과
-![16](https://user-images.githubusercontent.com/116356234/233768976-b7ac7335-70cb-45bf-ad6e-fb1a4a0b8af5.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768976-b7ac7335-70cb-45bf-ad6e-fb1a4a0b8af5.png" width="450">
  
 <hr>
 
@@ -933,7 +949,8 @@ select STUDENT_NAME,STUDENT_ADDRESS
 ```
 
 #### 실행 결과
-![17_17](https://user-images.githubusercontent.com/116356234/233768977-ac7fd6a1-218f-4a32-87c0-c3b1b51c21b3.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768977-ac7fd6a1-218f-4a32-87c0-c3b1b51c21b3.png" width="450">
 ~ 17행 생략
   
 <hr>
@@ -955,7 +972,8 @@ select student_no, student_name
 ```
 
 #### 실행 결과
-![18](https://user-images.githubusercontent.com/116356234/233768978-32592da5-563b-4aea-a01f-9b4b908b2f29.png)
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768978-32592da5-563b-4aea-a01f-9b4b908b2f29.png" width="290">
 
 <hr>
 
@@ -975,7 +993,8 @@ select d.DEPARTMENT_NAME "계열 학과명", round(avg(g.POINT),1) "전공평점
 ```
 
 #### 실행 결과
-![19_20](https://user-images.githubusercontent.com/116356234/233768980-8b4d09aa-10f1-4530-a5fb-3ae044cdcaec.png) 
+  
+<img src="https://user-images.githubusercontent.com/116356234/233768980-8b4d09aa-10f1-4530-a5fb-3ae044cdcaec.png" width="290">
 ~ 20행 생략
   
 </div>
