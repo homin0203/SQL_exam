@@ -6,7 +6,7 @@
 
 ## 춘대학교
 
-<details>
+<!-- <details>
 <summary><h3> 템플릿(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
 
@@ -138,20 +138,17 @@
   
   
 </div>
-</details>
+</details> -->
+
+[→ DDL & DML SQL문 보기](https://github.com/homin0203/SQL_exam/blob/main/chun/%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_KH_%EC%B6%98_TechUniv_%EC%8B%A4%EC%8A%B5.sql)  
 
 <details>
-<summary><h3>✅ 테이블 기술서 및 DDL & DML(펼쳐보기 🖱️) </h3></summary>
+<summary><h3>✅ 테이블 기술서(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
-
-### 테이블 기술서
 
 ![05_실습_KH_춘_TechUniv_Table기술서_2](https://user-images.githubusercontent.com/116356234/233554045-1fa54263-1ac4-4f3d-836b-1c4597a9f56d.png)
 
 ![05_실습_KH_춘_TechUniv_Table기술서_3](https://user-images.githubusercontent.com/116356234/233554049-31a43883-e603-4c8b-a50c-46fc1f8329df.png)
-
-### DDL & DML
-[→ DDL & DML SQL문 보기](https://github.com/homin0203/SQL_exam/blob/main/chun/%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_KH_%EC%B6%98_TechUniv_%EC%8B%A4%EC%8A%B5.sql)  
 
 </div>
 </details>
@@ -1355,6 +1352,31 @@ DELETE TB_GRADE G
 <br>
 
 ## SCOTT
+
+[→ DDL & DML SQL문 보기](https://github.com/homin0203/SQL_exam/blob/main/SCOTT/SCOTT_from_kh_DDL_DMl.sql)  
+
+<details>
+<summary><h3>✅ 테이블(펼쳐보기 🖱️) </h3></summary>
+<div markdown="1">
+
+### BONUS 
+
+![bonus](https://user-images.githubusercontent.com/116356234/233775555-bea3ad0e-effd-41d4-9dad-6b16c6c7af8e.png)
+
+### DEPT 
+
+![dept](https://user-images.githubusercontent.com/116356234/233775556-b678ff78-77d4-4709-8847-18805b9e574e.png)
+
+### EMP
+
+![emp](https://user-images.githubusercontent.com/116356234/233775557-b30964e8-55c6-4e09-aa46-e535d92d35e5.png)
+
+### SALGRADE
+
+![salgrade](https://user-images.githubusercontent.com/116356234/233775558-b4d6e930-15bb-4d18-9770-a23a1a8ae64e.png)
+
+</div>
+</details>
 
 <details>
 <summary><h3>1️⃣ SELECT(펼쳐보기 🖱️) </h3></summary>
