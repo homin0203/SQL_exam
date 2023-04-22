@@ -174,6 +174,7 @@ select DEPARTMENT_NAME "학과 명", CATEGORY 계열
 
 #### 실행 결과
 ![1](https://user-images.githubusercontent.com/116356234/233562971-83cfe5ce-ef7c-4a32-88d1-7cc3e3538079.png)
+~ 이후 행 생략
   
 <hr>
 
@@ -189,7 +190,8 @@ select DEPARTMENT_NAME||'의 정원은 '||to_char(CAPACITY)||'명 입니다'
   
 #### 실행 결과
 ![2](https://user-images.githubusercontent.com/116356234/233562975-408068bc-0517-45f1-9380-991261ab9249.png)
-
+~ 이후 행 생략 
+  
 <hr>
 
 #### 문제3
@@ -390,7 +392,7 @@ select *
 
 #### 실행 결과
 ![3](https://user-images.githubusercontent.com/116356234/233568521-b41c25ed-7025-4228-8c71-80a45a565028.png)
-
+~ 75행 생략
 
 <hr>
 
@@ -407,7 +409,7 @@ select substr(PROFESSOR_NAME,2)
 
 #### 실행 결과
 ![4](https://user-images.githubusercontent.com/116356234/233568523-45166986-b29c-452d-aa05-8dbf77bfa6a4.png)
-
+~ 114행 생략
 
 <hr>
 
@@ -425,7 +427,7 @@ select student_no,STUDENT_NAME
 
 #### 실행 결과
 ![5](https://user-images.githubusercontent.com/116356234/233568528-cfe24763-6cbe-417c-9d6b-a1b7eaa2b459.png)
-
+~ 204행 생략
 
 <hr>
 
@@ -489,7 +491,7 @@ select STUDENT_NO, STUDENT_NAME
 
 #### 실행 결과
 ![8](https://user-images.githubusercontent.com/116356234/233568540-0104c633-2778-4c57-b86c-cf129c4f0791.png)
-
+~ 52행 생략
 
 <hr>
 
@@ -525,7 +527,8 @@ select DEPARTMENT_NO 학과번호, count(DEPARTMENT_NO) "학생수(명)"
 
 #### 실행 결과
 ![10](https://user-images.githubusercontent.com/116356234/233568544-d26d6d5a-e067-4508-96d2-ea5f77ca0058.png)
-
+~ 62행 생략
+  
 <hr>
 
 #### 문제11
