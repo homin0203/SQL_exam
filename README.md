@@ -1365,7 +1365,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM EMP
+    WHERE COMM IS NOT NULL
+;
 ```
 
 #### 실행 결과
@@ -1379,7 +1382,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-  
+SELECT *
+    FROM EMP
+    WHERE COMM IS NULL OR COMM = 0
+;  
 ```
   
 #### 실행 결과
@@ -1393,7 +1399,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM EMP
+    WHERE MGR IS NULL
+;
 ```
 
 #### 실행 결과
@@ -1407,7 +1416,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM EMP
+    ORDER BY SAL DESC
+;
 ```
 
 #### 실행 결과
@@ -1421,7 +1433,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+select *
+    from emp
+    order by SAL desc, COMM desc
+;
 ```
 
 #### 실행 결과
@@ -1435,7 +1450,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT EMPNO, ENAME, JOB, HIREDATE
+    FROM EMP
+    ORDER BY 4
+;
 ```
 
 #### 실행 결과
@@ -1449,7 +1467,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT EMPNO, ENAME
+    FROM EMP
+    ORDER BY EMPNO DESC
+;
 ```
 
 #### 실행 결과
@@ -1463,7 +1484,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT EMPNO, DEPTNO, HIREDATE, ENAME, SAL
+    FROM EMP
+    ORDER BY DEPTNO, HIREDATE DESC
+;
 ```
 
 #### 실행 결과
@@ -1477,7 +1501,7 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT SYSDATE FROM DUAL;
 ```
 
 #### 실행 결과
@@ -1490,7 +1514,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT EMPNO 사번, ENAME 사원명, ROUND(SAL,-2) 급여
+    FROM EMP
+    ORDER BY 급여 DESC
+;
 ```
 
 #### 실행 결과
@@ -1502,7 +1529,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM emp
+    WHERE MOD(empno, 2) = 1
+;
 ```
 
 #### 실행 결과
@@ -1514,7 +1544,9 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT ENAME 사원명, to_char(hiredate, 'YYYY') 입사년도, to_char(hiredate, 'MM') 입사월
+    FROM emp
+;
 ```
 
 #### 실행 결과
@@ -1526,7 +1558,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM emp
+    WHERE TO_CHAR(HIREDATE, 'MM') = 9 --자동형변환으로 숫자형태의 9라고 작성해도 자동으로 비교해준다.
+;
 ```
 
 #### 실행 결과
@@ -1538,7 +1573,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM emp
+    WHERE TO_CHAR(HIREDATE, 'YY') = 81
+;
 ```
 
 #### 실행 결과
@@ -1550,7 +1588,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM emp
+    WHERE ename LIKE '%E'
+;
 ```
 
 #### 실행 결과
@@ -1562,7 +1603,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM emp
+    WHERE ename LIKE '__R%'
+;
 ```
 
 #### 실행 결과
@@ -1574,7 +1618,9 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT EMPNO, ENAME, HIREDATE, ADD_MONTHS(HIREDATE,'480')
+    FROM EMP
+;
 ```
 
 #### 실행 결과
@@ -1586,7 +1632,10 @@ DELETE TB_GRADE G
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM emp
+    WHERE (MONTHS_BETWEEN(sysdate, hiredate)/12) >= 38
+;
 ```
 
 #### 실행 결과
@@ -1598,7 +1647,7 @@ DELETE TB_GRADE G
   
 #### 내 코드
 ```SQL
-
+SELECT TO_CHAR(SYSDATE, 'YYYY') FROM DUAL;
 ```
 
 #### 실행 결과
