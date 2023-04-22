@@ -1372,6 +1372,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![1](https://user-images.githubusercontent.com/116356234/233774756-649b0088-8ee8-4211-a729-53d39f7907dd.png)
 
   
 <hr>
@@ -1389,6 +1390,7 @@ SELECT *
 ```
   
 #### 실행 결과
+![2](https://user-images.githubusercontent.com/116356234/233774759-3e05bb78-9e4c-4835-b779-b5a95cca82b6.png)
 
 
 <hr>
@@ -1406,6 +1408,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![3](https://user-images.githubusercontent.com/116356234/233774762-be8747b2-8473-4355-869b-40966a3a7af1.png)
 
 
 <hr>
@@ -1423,6 +1426,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![4](https://user-images.githubusercontent.com/116356234/233774763-0efa5e00-0acd-4a04-af64-1dfba8c29574.png)
 
 
 <hr>
@@ -1440,6 +1444,7 @@ select *
 ```
 
 #### 실행 결과
+![5](https://user-images.githubusercontent.com/116356234/233774765-bf7277f7-2299-4929-a5d0-697ebf4bc190.png)
 
 
 <hr>
@@ -1457,6 +1462,7 @@ SELECT EMPNO, ENAME, JOB, HIREDATE
 ```
 
 #### 실행 결과
+![6](https://user-images.githubusercontent.com/116356234/233774767-482d626f-ded3-42dd-9643-17defca05ddc.png)
 
 
 <hr>
@@ -1474,6 +1480,7 @@ SELECT EMPNO, ENAME
 ```
 
 #### 실행 결과
+![7](https://user-images.githubusercontent.com/116356234/233774769-de883557-da80-4bab-bfb8-4240e57ee66e.png)
 
 
 <hr>
@@ -1491,6 +1498,7 @@ SELECT EMPNO, DEPTNO, HIREDATE, ENAME, SAL
 ```
 
 #### 실행 결과
+![8](https://user-images.githubusercontent.com/116356234/233774773-837c06f5-e1f0-4e1a-b07c-a75172343170.png)
 
 
 <hr>
@@ -1505,6 +1513,7 @@ SELECT SYSDATE FROM DUAL;
 ```
 
 #### 실행 결과
+![9](https://user-images.githubusercontent.com/116356234/233774774-fd56aabc-7586-4563-a1fa-06c7a153ed3e.png)
   
 
 <hr>
@@ -1521,6 +1530,7 @@ SELECT EMPNO 사번, ENAME 사원명, ROUND(SAL,-2) 급여
 ```
 
 #### 실행 결과
+![10](https://user-images.githubusercontent.com/116356234/233774777-734cd254-85f2-4324-9791-3f738d859438.png)
 
 <hr>
 
@@ -1536,6 +1546,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![11](https://user-images.githubusercontent.com/116356234/233774778-f667febc-0ad9-4bfc-bb51-dc79d75540b2.png)
 
 <hr>
 
@@ -1550,6 +1561,7 @@ SELECT ENAME 사원명, to_char(hiredate, 'YYYY') 입사년도, to_char(hiredate
 ```
 
 #### 실행 결과
+![12](https://user-images.githubusercontent.com/116356234/233774781-88f55d87-f26c-4fae-bf3d-cc6e5553d5b3.png)
 
 <hr>
 
@@ -1565,6 +1577,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![13](https://user-images.githubusercontent.com/116356234/233774783-d7fb5e1d-b493-4d65-a755-8564d4d29c94.png)
 
 <hr>
 
@@ -1580,6 +1593,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![14](https://user-images.githubusercontent.com/116356234/233774784-33ef2c61-8f78-469b-b8cb-fa77779d6a98.png)
 
 <hr>
 
@@ -1595,6 +1609,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![15](https://user-images.githubusercontent.com/116356234/233774787-06c944b3-78ab-4bb9-be98-4efb024e6272.png)
 
 <hr>
 
@@ -1610,6 +1625,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![16](https://user-images.githubusercontent.com/116356234/233774788-49e1fa19-d83d-477d-bc43-410561945378.png)
 
 <hr>
 
@@ -1624,6 +1640,7 @@ SELECT EMPNO, ENAME, HIREDATE, ADD_MONTHS(HIREDATE,'480')
 ```
 
 #### 실행 결과
+![17](https://user-images.githubusercontent.com/116356234/233774790-50e3bf76-ba7a-413b-95c9-386babd21555.png)
 
 <hr>
 
@@ -1639,6 +1656,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![18](https://user-images.githubusercontent.com/116356234/233774791-129721e3-055a-4963-b7bf-97dc9a35fd6b.png)
 
 <hr>
 
@@ -1651,6 +1669,7 @@ SELECT TO_CHAR(SYSDATE, 'YYYY') FROM DUAL;
 ```
 
 #### 실행 결과
+![19](https://user-images.githubusercontent.com/116356234/233774793-b6c5b7cc-74c7-4f51-b517-de3c140d67ab.png)
   
 </div>
 </details>
