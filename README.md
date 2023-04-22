@@ -1360,6 +1360,8 @@ DELETE TB_GRADE G
 <summary><h3>1️⃣ SELECT(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
   
+[→ SCOTT SELECT SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/SCOTT/%EB%A1%9C%EC%BB%AC_SCOTT_SELECT%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C.sql)  
+  
 #### 문제1
 ![1](https://user-images.githubusercontent.com/116356234/233773760-81649867-fd53-4778-bd0c-ecb349b095b9.png)
 
