@@ -2461,7 +2461,7 @@ select e.emp_name, e.DEPT_CODE, m.emp_name
 
 #### 실행 결과
 ![8](https://user-images.githubusercontent.com/116356234/233892820-28f420d4-275c-48e0-93d9-58871ee8b326.png)
-~ 60행 
+~ 60행 생략
 
 <hr>
 
