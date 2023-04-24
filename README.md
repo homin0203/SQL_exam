@@ -10,131 +10,7 @@
 <summary><h3> 템플릿(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
 
-#### 문제1
 
-
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
-
-  
-<hr>
-
-#### 문제2
-
-
-#### 내 코드
-```SQL
-  
-```
-  
-#### 실행 결과
-
-
-<hr>
-
-#### 문제3
-
-
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
-
-
-<hr>
-
-#### 문제4
-
-
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
-
-
-<hr>
-
-#### 문제5
-
-
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
-
-
-<hr>
-
-#### 문제6
-
-
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
-
-
-<hr>
-
-#### 문제7
-
-
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
-
-
-<hr>
-
-#### 문제8
-
-
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
-
-
-<hr>
-
-#### 문제9
-
-
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
-  
-
-<hr>
-
-#### 문제10
-
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
   
   
 </div>
@@ -2440,6 +2316,275 @@ SELECT SUM((SALARY*(1+NVL(BONUS, 0)))*12) "Total"
 <div markdown="1">
 
 [→ KH Join & SubQuery SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/SCOTT/SCOTT_Join_SubQuery%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C.sql) 
+  
+#### 문제1
+![1_1](https://user-images.githubusercontent.com/116356234/233891808-26551c04-436d-470b-a5a9-02f9955cf750.png)
+
+#### 내 코드
+```SQL
+select emp_name, emp_no, d.DEPT_TITLE, j.JOB_NAME
+    from EMPLOYEE e natural join job j 
+        join DEPARTMENT d on e.dept_code = d.DEPT_ID
+    where emp_name Like '전%' and emp_no like '7%'
+;
+```
+
+#### 실행 결과
+
+  
+<hr>
+
+#### 문제2
+![2](https://user-images.githubusercontent.com/116356234/233891813-ad1c7787-e658-4755-821a-41f34526cf2c.png)
+
+
+#### 내 코드
+```SQL
+select emp_id, emp_name
+        ,(to_char(sysdate,'yy')+'100')-(substr(emp_no,1,2)) 나이
+        , d.DEPT_TITLE
+        , j.JOB_NAME
+    from employee e natural join job j 
+        join DEPARTMENT d on e.dept_code = d.DEPT_ID
+    where emp_no = (select max(emp_no) from employee) 
+;  
+```
+  
+#### 실행 결과
+
+
+<hr>
+
+#### 문제3
+![3](https://user-images.githubusercontent.com/116356234/233891815-fa8ca926-4c24-4fed-9b58-41ce6c8216f2.png)
+
+
+#### 내 코드
+```SQL
+select emp_id, emp_name, JOB_NAME
+    from employee e join job j
+    on e.job_code = j.job_code
+    where emp_name like '%형%'
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제4
+![4](https://user-images.githubusercontent.com/116356234/233891818-9ee69416-999f-469e-93c7-5fd852dab9eb.png)
+
+
+#### 내 코드
+```SQL
+select emp_name, j.JOB_NAME , dept_code, d.DEPT_TITLE
+    from employee e natural join job j 
+        join DEPARTMENT d on e.dept_code = d.DEPT_ID
+    where dept_code in('D5','D6')
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제5
+![5](https://user-images.githubusercontent.com/116356234/233891820-7fa0cfe4-d7ec-4718-9806-4d3ca7eda4da.png)
+
+
+#### 내 코드
+```SQL
+select emp_name, bonus, d.DEPT_TITLE, l.local_name
+    from employee e join DEPARTMENT d on e.dept_code = d.DEPT_ID
+                    join LOCATION l on d.LOCATION_ID = l.local_code  
+    where bonus is not null
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제6
+![6](https://user-images.githubusercontent.com/116356234/233891831-d9bbfe1c-2a51-4ab4-9aa9-7f94e2f54e3a.png)
+
+
+#### 내 코드
+```SQL
+select emp_name, j.JOB_NAME, d.DEPT_TITLE, l.LOCAL_NAME
+    from employee e join DEPARTMENT d on e.dept_code = d.DEPT_ID
+                    join job j on e.job_code = j.job_code  
+                    join LOCATION l on d.LOCATION_ID = l.local_code 
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제7
+![7](https://user-images.githubusercontent.com/116356234/233891833-68c8ce36-1b3c-4571-abff-fdaf2087391a.png)
+
+
+#### 내 코드
+```SQL
+select emp_name, d.DEPT_TITLE, l.LOCAL_NAME, n.NATIONAL_NAME
+    from employee e join DEPARTMENT d on e.dept_code = d.DEPT_ID
+                    join LOCATION l on d.LOCATION_ID = l.local_code 
+                    join NATIONAL n on l.NATIONAL_CODE = n.NATIONAL_CODE
+    where n.NATIONAL_NAME in('한국','일본')
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제8
+![8](https://user-images.githubusercontent.com/116356234/233891835-7273eaf2-72ac-4a1f-9632-9facb830aab2.png)
+
+
+#### 내 코드
+```SQL
+select e.emp_name, e.DEPT_CODE, m.emp_name
+    from employee e join employee m
+    on e.DEPT_CODE = m.DEPT_CODE
+    where e.emp_name != m.emp_name
+    order by 1
+;
+  
+--cross join 사용
+select e.emp_name, e.DEPT_CODE, m.emp_name
+    from employee e cross join employee m
+    where e.dept_code = m.dept_code and e.emp_name != m.emp_name
+    order by e.emp_name
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제9
+![9](https://user-images.githubusercontent.com/116356234/233891838-c16d4132-f352-47a0-b598-220d159be8b1.png)
+
+
+#### 내 코드
+```SQL
+select emp_name, j.JOB_NAME, salary*(1+nvl(bonus, 0)) 급여
+    from employee e join job j
+    on e.job_code = j.job_code
+    where e.bonus is null and e.job_code in('J4','J7')
+;
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제10
+![10](https://user-images.githubusercontent.com/116356234/233891840-d0945b1d-0f87-4821-a40a-a0dce61f4fce.png)
+
+#### 내 코드
+```SQL
+select emp_id, emp_name,  DEPT_TITLE, JOB_NAME, hire_date, rownum from(
+select emp_id, emp_name, d.DEPT_TITLE, j.JOB_NAME , hire_date, salary*(1+nvl(bonus,0))*12 연봉
+    from employee e join DEPARTMENT d on e.DEPT_CODE = d.DEPT_ID
+                    join job j on e.job_code = j.JOB_CODE
+    order by 연봉 desc)
+    where rownum <= 5
+;
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제11
+![11](https://user-images.githubusercontent.com/116356234/233891842-a244a82d-1e79-4ab7-a7a2-3601932b0aa7.png)
+
+#### 내 코드
+```SQL
+-- with사용
+with sum_tab as(
+    select (select dept_title from department where e.dept_code = dept_id) 부서명, sum(salary) 총급여
+            from employee e
+            group by dept_code
+)
+select * from sum_tab where 총급여 > (select sum(salary)*0.2 부총합 from employee);
+
+-- 인라인뷰 사용
+select d.dept_title , sum(m.salary) 부서별급여
+                from employee m ,department d,(select sum(salary)*0.2 부총합 from employee ) s
+                where m.dept_code = d.DEPT_ID
+                group by d.dept_title, s.부총합
+                having sum(m.salary) > s.부총합
+;  
+  
+-- join을 안쓰고 인라인뷰로 join효과
+select 부서명, 총급여
+    from (select (select dept_title from department where e.dept_code = dept_id) 부서명, sum(salary) 총급여
+            from employee e
+            group by dept_code)
+    where 총급여 > (select sum(salary) from employee)*0.2
+;
+  
+--join, having 사용
+select d.dept_title , sum(m.salary) 부서별급여
+                from employee m 
+                join department d on m.dept_code = d.DEPT_ID
+                group by d.dept_title
+                having sum(m.salary) > (select sum(salary)*0.2 from employee)
+;
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제12
+![12](https://user-images.githubusercontent.com/116356234/233891843-e9379a3f-925b-4ec0-b481-8273f0096526.png)
+
+#### 내 코드
+```SQL
+select d.dept_title , sum(salary) 부서별급여
+                from employee e left join department d
+                on e.dept_code = d.DEPT_ID
+                group by d.dept_title
+;
+```
+
+#### 실행 결과
+
+<hr>
+
+#### 문제13
+![13](https://user-images.githubusercontent.com/116356234/233891844-8b1d77de-259d-4105-b6a4-e60f66e5374d.png)
+  
+#### 내 코드
+```SQL
+with sum_avg_sal as (
+    select sum(salary), avg(salary)
+        from employee)
+select * from sum_avg_sal
+;  
+  
+--union 사용
+with sum_sal as(select sum(salary) from employee)
+, avg_sal(select avg(salary) from employee) 
+select * from sum_sal
+union
+select * from avg_sal;
+```
+
+#### 실행 결과
 
 </div>
 </details>
