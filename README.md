@@ -1975,6 +1975,39 @@ select empno, m.ename, sal, sal+지원금 총급여
 <br>
 
 ## KH
+  
+[→ DDL & DML SQL문 보기](https://github.com/homin0203/SQL_exam/blob/main/KH/KH_from_kh_DDL_DML.sql)  
+  
+<details>
+<summary><h3>✅ 테이블(펼쳐보기 🖱️) </h3></summary>
+<div markdown="1">
+
+### DEPARTMENT 
+  
+![department](https://user-images.githubusercontent.com/116356234/233891122-4a72d5b7-85dd-481b-9ef4-0c674eb8baa2.png)
+
+### EMPLOYEE 
+  
+![employee](https://user-images.githubusercontent.com/116356234/233891128-4da07bf0-91ad-4699-863a-d3eaef0baa68.png)
+
+### JOB 
+  
+![job](https://user-images.githubusercontent.com/116356234/233891130-78d55071-abe0-4d07-846e-c275ab804649.png)
+
+### LOCATION 
+  
+![location](https://user-images.githubusercontent.com/116356234/233891132-ca5c1ad8-7d17-4311-bc53-206b43127118.png)
+
+### NATIONAL 
+  
+![national](https://user-images.githubusercontent.com/116356234/233891137-e445c70a-c8e2-44ed-abe0-2513620393a9.png)
+
+### SAL_GRADE 
+  
+![sal_grade](https://user-images.githubusercontent.com/116356234/233891139-672dbfb1-e352-4021-aa56-24f472b3db84.png)
+
+</div>
+</details>
 
 <details>
 <summary><h3>1️⃣ SELECT(펼쳐보기 🖱️) </h3></summary>
