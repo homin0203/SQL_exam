@@ -1990,6 +1990,7 @@ SELECT * FROM JOB;
 ```
 
 #### 실행 결과
+![1](https://user-images.githubusercontent.com/116356234/233890186-def09a67-8ebd-4e89-ae8a-bd3aafe583dd.png)
 
   
 <hr>
@@ -2004,6 +2005,7 @@ SELECT JOB_NAME FROM JOB;
 ```
   
 #### 실행 결과
+![2](https://user-images.githubusercontent.com/116356234/233890191-3491ae6e-dc6b-4934-96d5-3c11e0bcf9e1.png)
 
 
 <hr>
@@ -2018,6 +2020,7 @@ SELECT * FROM DEPARTMENT;
 ```
 
 #### 실행 결과
+![3](https://user-images.githubusercontent.com/116356234/233890192-c038d55f-9eab-4404-a385-3ee187d96cc8.png)
 
 
 <hr>
@@ -2032,6 +2035,7 @@ SELECT EMP_NAME, EMAIL, PHONE, HIRE_DATE FROM EMPLOYEE;
 ```
 
 #### 실행 결과
+![4](https://user-images.githubusercontent.com/116356234/233890194-3e214869-e7ee-4d24-a5a5-1e8e77f0ffb7.png)
 
 
 <hr>
@@ -2046,6 +2050,7 @@ SELECT HIRE_DATE, EMP_NAME, SALARY FROM EMPLOYEE;
 ```
 
 #### 실행 결과
+![5](https://user-images.githubusercontent.com/116356234/233890197-068b7d58-21b9-4a33-8bb7-5200cff03b3c.png)
 
 
 <hr>
@@ -2064,6 +2069,7 @@ SELECT EMP_NAME, SALARY*12
 ```
 
 #### 실행 결과
+![6](https://user-images.githubusercontent.com/116356234/233890198-95bea5ee-0e95-4357-8c2e-bc6ac667cd62.png)
 
 
 <hr>
@@ -2081,6 +2087,7 @@ SELECT EMP_NAME, SALARY, HIRE_DATE, PHONE
 ```
 
 #### 실행 결과
+![7](https://user-images.githubusercontent.com/116356234/233890200-00e8ba52-cc5d-46a8-94d0-8a7a1519cb90.png)
 
 
 <hr>
@@ -2101,6 +2108,7 @@ SELECT EMP_NAME
 ```
 
 #### 실행 결과
+![8](https://user-images.githubusercontent.com/116356234/233890203-760cd161-41e6-45bc-beda-6d9955b0d8dc.png)
 
 
 <hr>
@@ -2118,6 +2126,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![9](https://user-images.githubusercontent.com/116356234/233890205-e565341e-8bf5-4645-8c88-5f7fdcd4a8f8.png)
   
 
 <hr>
@@ -2134,6 +2143,7 @@ SELECT EMP_NAME, DEPT_CODE, HIRE_DATE
 ```
 
 #### 실행 결과
+![10](https://user-images.githubusercontent.com/116356234/233890208-09c98a2d-7169-4607-8b3f-476418b7a1fd.png)
   
 #### 문제11
 ![11](https://user-images.githubusercontent.com/116356234/233886722-2a36a309-e9c1-49b7-bbe4-dbf0633396ab.png)
@@ -2148,6 +2158,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![11](https://user-images.githubusercontent.com/116356234/233890209-0c983612-3269-4414-893a-925e00109c05.png)
 
   
 <hr>
@@ -2165,6 +2176,7 @@ SELECT EMP_NAME
 ```
   
 #### 실행 결과
+![12](https://user-images.githubusercontent.com/116356234/233890210-e8e7770d-7a90-440e-9773-ddba8fb5c1ac.png)
 
 
 <hr>
@@ -2182,6 +2194,7 @@ SELECT EMP_NAME, PHONE
 ```
 
 #### 실행 결과
+![13](https://user-images.githubusercontent.com/116356234/233890211-833874a0-3298-4b65-8523-f7894d58c1fe.png)
 
 
 <hr>
@@ -2202,6 +2215,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![14](https://user-images.githubusercontent.com/116356234/233890212-53715504-a8aa-4663-8fda-ccbbad2545b5.png)
 
 
 <hr>
@@ -2218,6 +2232,7 @@ SELECT EMP_NAME, SUBSTR(EMP_NO,1,2), SUBSTR(EMP_NO,3,2), SUBSTR(EMP_NO,5,2)
 ```
 
 #### 실행 결과
+![15](https://user-images.githubusercontent.com/116356234/233890214-c6b40af3-4abd-4248-ad7f-4bf47a95fdee.png)
 
 
 <hr>
@@ -2234,6 +2249,7 @@ SELECT EMP_NAME, RPAD(SUBSTR(EMP_NO,1,7),14,'*')
 ```
 
 #### 실행 결과
+![16](https://user-images.githubusercontent.com/116356234/233890216-f46caf58-145d-432e-980d-a4389bd88009.png)
 
 
 <hr>
@@ -2252,6 +2268,7 @@ SELECT EMP_NAME
 ```
 
 #### 실행 결과
+![17](https://user-images.githubusercontent.com/116356234/233890219-b77d3baa-e0bb-4ca4-886e-dc1eda94230f.png)
 
 
 <hr>
@@ -2269,6 +2286,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![18](https://user-images.githubusercontent.com/116356234/233890220-69bee236-d3f1-47ca-a227-7d959513b4cc.png)
 
 
 <hr>
@@ -2287,6 +2305,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![19](https://user-images.githubusercontent.com/116356234/233890222-910eb202-64d6-4555-bcc9-c83fca2cb5b1.png)
   
 
 <hr>
@@ -2302,6 +2321,7 @@ SELECT EMP_NAME, TO_CHAR(SALARY, '$9,999,999')
 ```
 
 #### 실행 결과
+![20](https://user-images.githubusercontent.com/116356234/233890224-09d2279c-c1b9-4d51-b62c-0e1a4fe85ad8.png)
   
 
 <hr>
@@ -2320,6 +2340,7 @@ SELECT EMP_NAME
 ```
 
 #### 실행 결과
+![21](https://user-images.githubusercontent.com/116356234/233890227-4d03931e-5357-4f68-bef1-e70475e085bc.png)
   
 
 <hr>
@@ -2340,6 +2361,7 @@ SELECT EMP_ID, EMP_NAME, DEPT_CODE, CASE WHEN DEPT_CODE = 'D5' THEN '총무부'
 ```
 
 #### 실행 결과
+![22](https://user-images.githubusercontent.com/116356234/233890229-f6056cc4-5845-4f6a-ba1e-36ec3bc4e2bf.png)
   
 
 <hr>
@@ -2356,6 +2378,7 @@ SELECT EMP_NAME, SUBSTR(EMP_NO,1,6), SUBSTR(EMP_NO,8), SUBSTR(EMP_NO,1,6)+SUBSTR
 ```
 
 #### 실행 결과
+![23](https://user-images.githubusercontent.com/116356234/233890230-702fcd31-d978-4718-af29-cdfcd7a5b207.png)
   
 
 <hr>
@@ -2372,19 +2395,7 @@ SELECT SUM((SALARY*(1+NVL(BONUS, 0)))*12) "Total"
 ```
 
 #### 실행 결과
-  
-
-<hr>
-
-#### 문제25
-![25](https://user-images.githubusercontent.com/116356234/233886753-34fd4930-d3df-4e75-9813-e7c53acab783.png)
-  
-#### 내 코드
-```SQL
-
-```
-
-#### 실행 결과
+![24](https://user-images.githubusercontent.com/116356234/233890231-80a2c8cd-8d3d-4edb-8b87-1e8183d58ba9.png)  
   
 </div>
 </details>
