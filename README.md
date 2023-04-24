@@ -1701,6 +1701,262 @@ SELECT TO_CHAR(SYSDATE, 'YYYY') FROM DUAL;
 <details>
 <summary><h3>2️⃣ Join & SubQuery(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
+
+[→ SCOTT Join & SubQuery SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/SCOTT/SCOTT_Join_SubQuery%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C.sql) 
+
+#### 문제1
+![1](https://user-images.githubusercontent.com/116356234/233884345-f4005367-4e0e-4a31-8280-3c98565d12c7.png)
+
+
+#### 내 코드
+```SQL
+select e.*, s.grade
+    from emp e join SALGRADE s
+    on e.sal between s.LOSAL and s.HISAL
+;   
+```
+
+#### 실행 결과
+
+  
+<hr>
+
+#### 문제2
+![2](https://user-images.githubusercontent.com/116356234/233884349-ab29258d-c605-4767-9a59-112021aed31f.png)
+
+
+#### 내 코드
+```SQL
+select e.*, s.grade
+    from emp e join SALGRADE s
+    on e.sal between s.LOSAL and s.HISAL
+    where s.grade <= 4 and deptno != 10
+    order by s.grade desc
+;    
+```
+  
+#### 실행 결과
+
+
+<hr>
+
+#### 문제3
+![3](https://user-images.githubusercontent.com/116356234/233884350-a5504e5a-3cbe-4e3d-9818-20ca5f1193b5.png)
+
+
+#### 내 코드
+```SQL
+select s.grade, avg(sal*12+nvl(comm,0)) 평균연봉
+    from emp e join SALGRADE s
+    on e.sal between s.LOSAL and s.HISAL
+    where deptno in (20,30)
+    group by s.grade
+    order by 평균연봉 desc
+; 
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제4
+![4](https://user-images.githubusercontent.com/116356234/233884351-3fef669a-e9db-428c-91ee-3aca14681298.png)
+
+
+#### 내 코드
+```SQL
+select deptno, floor(avg(sal*12+nvl(comm,0))) 평균연봉
+    from emp 
+    where deptno in (20,30)
+    group by deptno
+    order by 평균연봉 desc
+; 
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제5
+![5](https://user-images.githubusercontent.com/116356234/233884352-4d28e0e6-898b-4bb9-b3cf-4d61604f389e.png)
+
+
+#### 내 코드
+```SQL
+select empno, ename, job, mgr,
+            (select ename from emp s where empno in (e.mgr)) manager
+    from emp e
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제6
+![6](https://user-images.githubusercontent.com/116356234/233884354-8a83149b-2830-4ec1-bad0-e9ab9f0c68f5.png)
+
+
+#### 내 코드
+```SQL
+select empno, ename, job, mgr,
+            (select ename from emp s where empno = (e.mgr)) manager
+    from emp e
+    order by mgr
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제7
+![7](https://user-images.githubusercontent.com/116356234/233884358-80067efd-464c-4edf-b79a-b2518ceae5d8.png)
+
+
+#### 내 코드
+```SQL
+select * 
+    from emp
+    where sal > (select sal from emp where ename = 'MARTIN')
+    and deptno in((select deptno from emp where ename = 'ALLEN'), 20)
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제8
+![8](https://user-images.githubusercontent.com/116356234/233884359-c6b13423-e6da-44f6-ae1a-7da3d69e8f1b.png)
+
+
+#### 내 코드
+```SQL
+select ename, (select ename from emp where empno = e.mgr) manager
+    from emp e join dept d
+    on e.deptno = d.deptno
+    where d.DNAME = 'RESEARCH'
+;
+```
+
+#### 실행 결과
+
+
+<hr>
+
+#### 문제9
+![9](https://user-images.githubusercontent.com/116356234/233884361-c5c339d3-9d62-4b62-95ac-988ea70d90a6.png)
+
+
+#### 내 코드
+```SQL
+select grade, ename 등급별가장작은급여 
+    from emp m join(select s.grade, min(sal) min_sal
+                        from emp e join salgrade s
+                        on e.sal between s.losal and s.HISAL
+                        group by s.grade)
+    on m.sal = min_sal
+;
+
+--where절에 일반서브쿼리 방법
+select grade, ename
+        from emp e 
+        join salgrade s on e.sal between s.losal and s.HISAL
+        where sal in (select min(sal)
+                            from emp e1 
+                            join salgrade s1 on e1.sal between s1.losal and s1.HISAL
+                            group by grade)
+;
+
+--where절에 상관쿼리 방법
+select grade, ename
+        from emp e 
+        join salgrade s on e.sal between s.losal and s.HISAL
+        where sal = (select min(sal)
+                            from emp e1 
+                            join salgrade s1 on e1.sal between s1.losal and s1.HISAL
+                            where s1.grade = s.grade)
+;
+```
+
+#### 실행 결과
+  
+
+<hr>
+
+#### 문제10
+![10](https://user-images.githubusercontent.com/116356234/233884362-289e641a-076f-4740-9451-f18fd99e5c5a.png)
+
+#### 내 코드
+```SQL
+select s.grade, min(sal) min_sal, max(sal) max_sal, round(avg(sal), 2) avg_sal
+    from emp e join salgrade s
+    on e.sal between s.losal and s.HISAL
+    group by s.grade
+;
+```
+
+#### 실행 결과
+  
+
+<hr>
+
+#### 문제11
+![11](https://user-images.githubusercontent.com/116356234/233884366-ccf5e21c-0588-408c-ad71-238649d620ff.png)
+
+#### 내 코드
+```SQL
+select grade, m.ename 
+from emp m join (select grade , avg(e.sal) a_sal
+                    from emp e join salgrade s
+                    on e.sal between s.losal and s.hisal
+                    group by grade
+                    order by grade)
+         on sal between a_sal*0.9 and a_sal*1.1
+;
+```
+
+#### 실행 결과
+  
+
+<hr>
+
+#### 문제12
+![12](https://user-images.githubusercontent.com/116356234/233884367-04577269-7d5d-4b25-8898-7d28b6dcfd5d.png)
+
+#### 내 코드
+```SQL
+select empno, ename, sal, 
+            case when loc = 'NEW YORK' then sal*1.02 
+                 when loc = 'DALLAS' then sal*1.05
+                 when loc = 'CHICAGO' then sal*1.03
+                 when loc = 'BOSTON' then sal*1.07
+                 else sal end 추가지원금
+    from emp e join dept d
+    on e.deptno = d.deptno
+    order by 추가지원금-sal desc
+;
+
+-- join 서브쿼리 버전
+select empno, m.ename, sal, sal+지원금 총급여
+    from emp m join(select ename, case when loc = 'NEW YORK' then sal*0.02 
+                             when loc = 'DALLAS' then sal*0.05
+                             when loc = 'CHICAGO' then sal*0.03
+                             when loc = 'BOSTON' then sal*0.07
+                             else 0 end 지원금
+                    from emp e 
+                    join dept d using(deptno)) t on m.ename = t.ename
+    order by 지원금 desc
+;
+```
+
+#### 실행 결과
   
 </div>
 </details>
