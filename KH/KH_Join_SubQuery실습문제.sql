@@ -120,33 +120,3 @@ with sum_sal as(select sum(salary) from employee)
 select * from sum_sal
 union
 select * from avg_sal;
-
-
-------------------------------------------------
-
-select tab_1.*,rownum from(
-SELECT EMP_NAME, SALARY,
-ROUND(CUME_DIST() OVER (ORDER BY SALARY), 1) 누적분산
-FROM EMPLOYEE) tab_1
-; 
-select tab_2.* , ROUND(CUME_DIST() OVER (ORDER BY SALARY), 1) 누적분산
-    from(
-select tab_1.*, rownum 순위
-    from(select emp_name, salary from employee order by salary) tab_1) tab_2
-    where 순위 <= 10
-;
-drop table test001;
-create table test001(no number(10));
-insert into test001 values (10);
-insert into test001 values (20);
-insert into test001 values (30);
-insert into test001 values (45);
-insert into test001 values (50);
-insert into test001 values (60);
-insert into test001 values (70);
-insert into test001 values (80);
-insert into test001 values (90);
-insert into test001 values (100);
-commit;
-select * from test001;
-select no,round(CUME_DIST() OVER (ORDER BY no ),2) from test001;
