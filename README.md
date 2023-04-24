@@ -2315,7 +2315,7 @@ SELECT SUM((SALARY*(1+NVL(BONUS, 0)))*12) "Total"
 <summary><h3>2️⃣ Join & SubQuery(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
 
-[→ KH Join & SubQuery SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/SCOTT/SCOTT_Join_SubQuery%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C.sql) 
+[→ KH Join & SubQuery SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/KH/KH_Join_SubQuery%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C.sql) 
   
 #### 문제1
 ![1_1](https://user-images.githubusercontent.com/116356234/233891808-26551c04-436d-470b-a5a9-02f9955cf750.png)
@@ -2330,6 +2330,7 @@ select emp_name, emp_no, d.DEPT_TITLE, j.JOB_NAME
 ```
 
 #### 실행 결과
+![1](https://user-images.githubusercontent.com/116356234/233892804-c2771be6-ba31-4afc-b6e5-8eb2a182a631.png)
 
   
 <hr>
@@ -2351,7 +2352,7 @@ select emp_id, emp_name
 ```
   
 #### 실행 결과
-
+![2](https://user-images.githubusercontent.com/116356234/233892806-00a03439-fa1e-4450-ae86-74824c2f94e9.png)
 
 <hr>
 
@@ -2369,7 +2370,7 @@ select emp_id, emp_name, JOB_NAME
 ```
 
 #### 실행 결과
-
+![3](https://user-images.githubusercontent.com/116356234/233892807-2d62a9d1-1a3b-4f0c-94e4-c986b3fb6ca6.png)
 
 <hr>
 
@@ -2387,7 +2388,7 @@ select emp_name, j.JOB_NAME , dept_code, d.DEPT_TITLE
 ```
 
 #### 실행 결과
-
+![4](https://user-images.githubusercontent.com/116356234/233892808-7010af6c-5045-42f9-bb74-1ac8cc4b8762.png)
 
 <hr>
 
@@ -2405,7 +2406,7 @@ select emp_name, bonus, d.DEPT_TITLE, l.local_name
 ```
 
 #### 실행 결과
-
+![5](https://user-images.githubusercontent.com/116356234/233892811-21aacfbb-3c2d-4c66-b46d-85d1f8be4e31.png)
 
 <hr>
 
@@ -2423,7 +2424,7 @@ select emp_name, j.JOB_NAME, d.DEPT_TITLE, l.LOCAL_NAME
 ```
 
 #### 실행 결과
-
+![6](https://user-images.githubusercontent.com/116356234/233892814-94be28ca-1283-49d0-92d0-df9d83ec3f9d.png)
 
 <hr>
 
@@ -2442,6 +2443,7 @@ select emp_name, d.DEPT_TITLE, l.LOCAL_NAME, n.NATIONAL_NAME
 ```
 
 #### 실행 결과
+![7](https://user-images.githubusercontent.com/116356234/233892815-996ca420-8947-43c7-9f36-f3d4583ee145.png)
 
 
 <hr>
@@ -2468,6 +2470,7 @@ select e.emp_name, e.DEPT_CODE, m.emp_name
 ```
 
 #### 실행 결과
+![8](https://user-images.githubusercontent.com/116356234/233892820-28f420d4-275c-48e0-93d9-58871ee8b326.png)
 
 
 <hr>
@@ -2486,6 +2489,7 @@ select emp_name, j.JOB_NAME, salary*(1+nvl(bonus, 0)) 급여
 ```
 
 #### 실행 결과
+![9](https://user-images.githubusercontent.com/116356234/233892822-27e91da2-3f9e-483b-bb2a-aa2824106821.png)
 
 <hr>
 
@@ -2504,6 +2508,7 @@ select emp_id, emp_name, d.DEPT_TITLE, j.JOB_NAME , hire_date, salary*(1+nvl(bon
 ```
 
 #### 실행 결과
+![10](https://user-images.githubusercontent.com/116356234/233892823-6d925527-d601-4c31-b1ce-38dc7de0909c.png)
 
 <hr>
 
@@ -2546,6 +2551,7 @@ select d.dept_title , sum(m.salary) 부서별급여
 ```
 
 #### 실행 결과
+![11](https://user-images.githubusercontent.com/116356234/233892824-b83c95f2-12c3-4b65-8446-3b8246ce04ed.png)
 
 <hr>
 
@@ -2562,6 +2568,7 @@ select d.dept_title , sum(salary) 부서별급여
 ```
 
 #### 실행 결과
+![12](https://user-images.githubusercontent.com/116356234/233892827-6e418b0c-2a34-4fa6-b390-000536c881d5.png)
 
 <hr>
 
@@ -2585,6 +2592,7 @@ select * from avg_sal;
 ```
 
 #### 실행 결과
+![13](https://user-images.githubusercontent.com/116356234/233892829-31d8a4a5-1530-41d2-adfd-83d854a53265.png)
 
 </div>
 </details>
