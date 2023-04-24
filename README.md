@@ -1979,6 +1979,8 @@ select empno, m.ename, sal, sal+지원금 총급여
 <details>
 <summary><h3>1️⃣ SELECT(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
+
+[→ KH SELECT SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/KH/%EB%A1%9C%EC%BB%AC_KH_SELECT%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C.sql) 
   
 #### 문제1
 ![1](https://user-images.githubusercontent.com/116356234/233886694-569b07d4-0e4f-4742-978a-20e9dcdb30f5.png)
@@ -2403,6 +2405,8 @@ SELECT SUM((SALARY*(1+NVL(BONUS, 0)))*12) "Total"
 <details>
 <summary><h3>2️⃣ Join & SubQuery(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
-  
+
+[→ KH Join & SubQuery SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/SCOTT/SCOTT_Join_SubQuery%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C.sql) 
+
 </div>
 </details>
