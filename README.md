@@ -6,16 +6,6 @@
 
 ## 춘대학교
 
-<!-- <details>
-<summary><h3> 템플릿(펼쳐보기 🖱️) </h3></summary>
-<div markdown="1">
-
-
-  
-  
-</div>
-</details> -->
-
 [→ DDL & DML SQL문 보기](https://github.com/homin0203/SQL_exam/blob/main/chun/%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_KH_%EC%B6%98_TechUniv_%EC%8B%A4%EC%8A%B5.sql)  
 
 <details>
@@ -2471,7 +2461,7 @@ select e.emp_name, e.DEPT_CODE, m.emp_name
 
 #### 실행 결과
 ![8](https://user-images.githubusercontent.com/116356234/233892820-28f420d4-275c-48e0-93d9-58871ee8b326.png)
-
+~ 60행 
 
 <hr>
 
