@@ -6,7 +6,7 @@
 
 ## 춘대학교
 
-<details>
+<!-- <details>
 <summary><h3> 템플릿(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
 
@@ -138,20 +138,17 @@
   
   
 </div>
-</details>
+</details> -->
+
+[→ DDL & DML SQL문 보기](https://github.com/homin0203/SQL_exam/blob/main/chun/%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_KH_%EC%B6%98_TechUniv_%EC%8B%A4%EC%8A%B5.sql)  
 
 <details>
-<summary><h3>✅ 테이블 기술서 및 DDL & DML(펼쳐보기 🖱️) </h3></summary>
+<summary><h3>✅ 테이블 기술서(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
-
-### 테이블 기술서
 
 ![05_실습_KH_춘_TechUniv_Table기술서_2](https://user-images.githubusercontent.com/116356234/233554045-1fa54263-1ac4-4f3d-836b-1c4597a9f56d.png)
 
 ![05_실습_KH_춘_TechUniv_Table기술서_3](https://user-images.githubusercontent.com/116356234/233554049-31a43883-e603-4c8b-a50c-46fc1f8329df.png)
-
-### DDL & DML
-[→ DDL & DML SQL문 보기](https://github.com/homin0203/SQL_exam/blob/main/chun/%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_KH_%EC%B6%98_TechUniv_%EC%8B%A4%EC%8A%B5.sql)  
 
 </div>
 </details>
@@ -1356,9 +1353,36 @@ DELETE TB_GRADE G
 
 ## SCOTT
 
+[→ DDL & DML SQL문 보기](https://github.com/homin0203/SQL_exam/blob/main/SCOTT/SCOTT_from_kh_DDL_DMl.sql)  
+
+<details>
+<summary><h3>✅ 테이블(펼쳐보기 🖱️) </h3></summary>
+<div markdown="1">
+
+### BONUS 
+
+![bonus](https://user-images.githubusercontent.com/116356234/233775555-bea3ad0e-effd-41d4-9dad-6b16c6c7af8e.png)
+
+### DEPT 
+
+![dept](https://user-images.githubusercontent.com/116356234/233775556-b678ff78-77d4-4709-8847-18805b9e574e.png)
+
+### EMP
+
+![emp](https://user-images.githubusercontent.com/116356234/233775557-b30964e8-55c6-4e09-aa46-e535d92d35e5.png)
+
+### SALGRADE
+
+![salgrade](https://user-images.githubusercontent.com/116356234/233775558-b4d6e930-15bb-4d18-9770-a23a1a8ae64e.png)
+
+</div>
+</details>
+
 <details>
 <summary><h3>1️⃣ SELECT(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
+  
+[→ SCOTT SELECT SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/SCOTT/%EB%A1%9C%EC%BB%AC_SCOTT_SELECT%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C.sql)  
   
 #### 문제1
 ![1](https://user-images.githubusercontent.com/116356234/233773760-81649867-fd53-4778-bd0c-ecb349b095b9.png)
@@ -1372,6 +1396,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![1](https://user-images.githubusercontent.com/116356234/233774872-e3207ad5-725a-4570-ab50-53985bb67d77.png)
 
   
 <hr>
@@ -1389,6 +1414,7 @@ SELECT *
 ```
   
 #### 실행 결과
+![2](https://user-images.githubusercontent.com/116356234/233774875-d119c706-6a04-4f57-96ba-f3c015febdd6.png)
 
 
 <hr>
@@ -1406,6 +1432,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![3](https://user-images.githubusercontent.com/116356234/233774876-507b0fc8-fc2c-4f76-9d1a-c1254cdafde0.png)
 
 
 <hr>
@@ -1423,6 +1450,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![4](https://user-images.githubusercontent.com/116356234/233774877-d401eddb-e7d1-4c03-8881-e473441b2725.png)
 
 
 <hr>
@@ -1440,6 +1468,7 @@ select *
 ```
 
 #### 실행 결과
+![5](https://user-images.githubusercontent.com/116356234/233774878-22d08f7d-5c53-4a1a-855d-28f0cd228022.png)
 
 
 <hr>
@@ -1457,6 +1486,7 @@ SELECT EMPNO, ENAME, JOB, HIREDATE
 ```
 
 #### 실행 결과
+![6](https://user-images.githubusercontent.com/116356234/233774880-6315bf67-4cf6-4cf9-89e4-8b4ab53da8d0.png)
 
 
 <hr>
@@ -1474,6 +1504,7 @@ SELECT EMPNO, ENAME
 ```
 
 #### 실행 결과
+![7](https://user-images.githubusercontent.com/116356234/233774882-8cf4870a-f208-49b6-904c-223b5c305371.png)
 
 
 <hr>
@@ -1491,6 +1522,7 @@ SELECT EMPNO, DEPTNO, HIREDATE, ENAME, SAL
 ```
 
 #### 실행 결과
+![8](https://user-images.githubusercontent.com/116356234/233774883-77fb9164-4835-468e-b616-dd6bb7696b7d.png)
 
 
 <hr>
@@ -1505,6 +1537,7 @@ SELECT SYSDATE FROM DUAL;
 ```
 
 #### 실행 결과
+![9](https://user-images.githubusercontent.com/116356234/233774884-670fd1af-8be6-4c62-b219-0a83f74d4d1a.png)
   
 
 <hr>
@@ -1521,6 +1554,7 @@ SELECT EMPNO 사번, ENAME 사원명, ROUND(SAL,-2) 급여
 ```
 
 #### 실행 결과
+![10](https://user-images.githubusercontent.com/116356234/233774886-86f02ea0-cf8b-4df7-93a4-6c770bd5aa47.png)
 
 <hr>
 
@@ -1536,6 +1570,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![11](https://user-images.githubusercontent.com/116356234/233774887-2e7c79df-70f5-4a17-ad8c-1468a67319fa.png)
 
 <hr>
 
@@ -1550,6 +1585,7 @@ SELECT ENAME 사원명, to_char(hiredate, 'YYYY') 입사년도, to_char(hiredate
 ```
 
 #### 실행 결과
+![12](https://user-images.githubusercontent.com/116356234/233774888-f3f3cbdc-3eb0-495a-b06a-b023209b4888.png)
 
 <hr>
 
@@ -1565,6 +1601,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![13](https://user-images.githubusercontent.com/116356234/233774889-d0901b36-3d5a-4a50-b029-8d8c6b8f0c5b.png)
 
 <hr>
 
@@ -1580,6 +1617,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![14](https://user-images.githubusercontent.com/116356234/233774890-91ba6081-9290-438c-90ef-b0eecb98a222.png)
 
 <hr>
 
@@ -1595,6 +1633,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![15](https://user-images.githubusercontent.com/116356234/233774891-1ca7a0a8-69ae-43c3-972c-08a9e7c1f239.png)
 
 <hr>
 
@@ -1610,6 +1649,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![16](https://user-images.githubusercontent.com/116356234/233774892-e1ff21e1-afb9-4eb0-81ce-19068773ff3e.png)
 
 <hr>
 
@@ -1624,6 +1664,7 @@ SELECT EMPNO, ENAME, HIREDATE, ADD_MONTHS(HIREDATE,'480')
 ```
 
 #### 실행 결과
+![17](https://user-images.githubusercontent.com/116356234/233774893-a89748d8-0c97-46c1-b92d-98d5aa7313e4.png)
 
 <hr>
 
@@ -1639,6 +1680,7 @@ SELECT *
 ```
 
 #### 실행 결과
+![18](https://user-images.githubusercontent.com/116356234/233774894-131fde08-b9fd-4f91-bb3d-2051c56176e2.png)
 
 <hr>
 
@@ -1651,6 +1693,7 @@ SELECT TO_CHAR(SYSDATE, 'YYYY') FROM DUAL;
 ```
 
 #### 실행 결과
+![19](https://user-images.githubusercontent.com/116356234/233774895-9cf30b45-2f10-49d6-92f9-5e0e6186bf40.png)
   
 </div>
 </details>
@@ -1658,6 +1701,273 @@ SELECT TO_CHAR(SYSDATE, 'YYYY') FROM DUAL;
 <details>
 <summary><h3>2️⃣ Join & SubQuery(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
+
+[→ SCOTT Join & SubQuery SQL문 전체보기](https://github.com/homin0203/SQL_exam/blob/main/SCOTT/SCOTT_Join_SubQuery%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C.sql) 
+
+#### 문제1
+![1](https://user-images.githubusercontent.com/116356234/233884345-f4005367-4e0e-4a31-8280-3c98565d12c7.png)
+
+
+#### 내 코드
+```SQL
+select e.*, s.grade
+    from emp e join SALGRADE s
+    on e.sal between s.LOSAL and s.HISAL
+;   
+```
+
+#### 실행 결과
+![1](https://user-images.githubusercontent.com/116356234/233885440-e576aeb3-e1d7-46cd-a7b4-69d42f107154.png)
+
+  
+<hr>
+
+#### 문제2
+![2](https://user-images.githubusercontent.com/116356234/233884349-ab29258d-c605-4767-9a59-112021aed31f.png)
+
+
+#### 내 코드
+```SQL
+select e.*, s.grade
+    from emp e join SALGRADE s
+    on e.sal between s.LOSAL and s.HISAL
+    where s.grade <= 4 and deptno != 10
+    order by s.grade desc
+;    
+```
+  
+#### 실행 결과
+![2](https://user-images.githubusercontent.com/116356234/233885443-48c89265-70ea-4c3e-8f6d-21b2300764d0.png)
+
+
+<hr>
+
+#### 문제3
+![3](https://user-images.githubusercontent.com/116356234/233884350-a5504e5a-3cbe-4e3d-9818-20ca5f1193b5.png)
+
+
+#### 내 코드
+```SQL
+select s.grade, avg(sal*12+nvl(comm,0)) 평균연봉
+    from emp e join SALGRADE s
+    on e.sal between s.LOSAL and s.HISAL
+    where deptno in (20,30)
+    group by s.grade
+    order by 평균연봉 desc
+; 
+```
+
+#### 실행 결과
+![3](https://user-images.githubusercontent.com/116356234/233885444-213a1644-60d9-4fd8-b5dd-3a4cce6863d6.png)
+
+
+<hr>
+
+#### 문제4
+![4](https://user-images.githubusercontent.com/116356234/233884351-3fef669a-e9db-428c-91ee-3aca14681298.png)
+
+
+#### 내 코드
+```SQL
+select deptno, floor(avg(sal*12+nvl(comm,0))) 평균연봉
+    from emp 
+    where deptno in (20,30)
+    group by deptno
+    order by 평균연봉 desc
+; 
+```
+
+#### 실행 결과
+![4](https://user-images.githubusercontent.com/116356234/233885446-aa9e7ab8-a4df-40fe-a1c4-8324c2f6a6c8.png)
+
+
+<hr>
+
+#### 문제5
+![5](https://user-images.githubusercontent.com/116356234/233884352-4d28e0e6-898b-4bb9-b3cf-4d61604f389e.png)
+
+
+#### 내 코드
+```SQL
+select empno, ename, job, mgr,
+            (select ename from emp s where empno in (e.mgr)) manager
+    from emp e
+;
+```
+
+#### 실행 결과
+![5](https://user-images.githubusercontent.com/116356234/233885447-6dace550-3d94-476b-9a74-d48288ce0689.png)
+
+
+<hr>
+
+#### 문제6
+![6](https://user-images.githubusercontent.com/116356234/233884354-8a83149b-2830-4ec1-bad0-e9ab9f0c68f5.png)
+
+
+#### 내 코드
+```SQL
+select empno, ename, job, mgr,
+            (select ename from emp s where empno = (e.mgr)) manager
+    from emp e
+    order by mgr
+;
+```
+
+#### 실행 결과
+![6](https://user-images.githubusercontent.com/116356234/233885450-5cd4b63b-7c81-40cb-a648-9e38284db0d2.png)
+
+
+<hr>
+
+#### 문제7
+![7](https://user-images.githubusercontent.com/116356234/233884358-80067efd-464c-4edf-b79a-b2518ceae5d8.png)
+
+
+#### 내 코드
+```SQL
+select * 
+    from emp
+    where sal > (select sal from emp where ename = 'MARTIN')
+    and deptno in((select deptno from emp where ename = 'ALLEN'), 20)
+;
+```
+
+#### 실행 결과
+![7](https://user-images.githubusercontent.com/116356234/233885452-02c0d8d6-5ed7-44c3-8601-eaca841aa0a9.png)
+
+<hr>
+
+#### 문제8
+![8](https://user-images.githubusercontent.com/116356234/233884359-c6b13423-e6da-44f6-ae1a-7da3d69e8f1b.png)
+
+
+#### 내 코드
+```SQL
+select ename, (select ename from emp where empno = e.mgr) manager
+    from emp e join dept d
+    on e.deptno = d.deptno
+    where d.DNAME = 'RESEARCH'
+;
+```
+
+#### 실행 결과
+![8](https://user-images.githubusercontent.com/116356234/233885453-0c21171d-1ac2-47dc-a42c-79df80d8388a.png)
+
+
+
+<hr>
+
+#### 문제9
+![9](https://user-images.githubusercontent.com/116356234/233884361-c5c339d3-9d62-4b62-95ac-988ea70d90a6.png)
+
+
+#### 내 코드
+```SQL
+select grade, ename 등급별가장작은급여 
+    from emp m join(select s.grade, min(sal) min_sal
+                        from emp e join salgrade s
+                        on e.sal between s.losal and s.HISAL
+                        group by s.grade)
+    on m.sal = min_sal
+;
+
+--where절에 일반서브쿼리 방법
+select grade, ename
+        from emp e 
+        join salgrade s on e.sal between s.losal and s.HISAL
+        where sal in (select min(sal)
+                            from emp e1 
+                            join salgrade s1 on e1.sal between s1.losal and s1.HISAL
+                            group by grade)
+;
+
+--where절에 상관쿼리 방법
+select grade, ename
+        from emp e 
+        join salgrade s on e.sal between s.losal and s.HISAL
+        where sal = (select min(sal)
+                            from emp e1 
+                            join salgrade s1 on e1.sal between s1.losal and s1.HISAL
+                            where s1.grade = s.grade)
+;
+```
+
+#### 실행 결과
+![9](https://user-images.githubusercontent.com/116356234/233885454-56dd2910-c852-4966-b4e3-5cceba4b6e88.png)
+
+
+<hr>
+
+#### 문제10
+![10](https://user-images.githubusercontent.com/116356234/233884362-289e641a-076f-4740-9451-f18fd99e5c5a.png)
+
+#### 내 코드
+```SQL
+select s.grade, min(sal) min_sal, max(sal) max_sal, round(avg(sal), 2) avg_sal
+    from emp e join salgrade s
+    on e.sal between s.losal and s.HISAL
+    group by s.grade
+;
+```
+
+#### 실행 결과
+![10](https://user-images.githubusercontent.com/116356234/233885455-8972e8a4-e33c-4b4c-a3bf-f80b19e794ae.png)
+
+
+<hr>
+
+#### 문제11
+![11](https://user-images.githubusercontent.com/116356234/233884366-ccf5e21c-0588-408c-ad71-238649d620ff.png)
+
+#### 내 코드
+```SQL
+select grade, m.ename 
+from emp m join (select grade , avg(e.sal) a_sal
+                    from emp e join salgrade s
+                    on e.sal between s.losal and s.hisal
+                    group by grade
+                    order by grade)
+         on sal between a_sal*0.9 and a_sal*1.1
+;
+```
+
+#### 실행 결과
+![11](https://user-images.githubusercontent.com/116356234/233885457-38d3d70f-3159-4d04-bfeb-48123237a055.png)    
+
+<hr>
+
+#### 문제12
+![12](https://user-images.githubusercontent.com/116356234/233884367-04577269-7d5d-4b25-8898-7d28b6dcfd5d.png)
+
+#### 내 코드
+```SQL
+select empno, ename, sal, 
+            case when loc = 'NEW YORK' then sal*1.02 
+                 when loc = 'DALLAS' then sal*1.05
+                 when loc = 'CHICAGO' then sal*1.03
+                 when loc = 'BOSTON' then sal*1.07
+                 else sal end 추가지원금
+    from emp e join dept d
+    on e.deptno = d.deptno
+    order by 추가지원금-sal desc
+;
+
+-- join 서브쿼리 버전
+select empno, m.ename, sal, sal+지원금 총급여
+    from emp m join(select ename, case when loc = 'NEW YORK' then sal*0.02 
+                             when loc = 'DALLAS' then sal*0.05
+                             when loc = 'CHICAGO' then sal*0.03
+                             when loc = 'BOSTON' then sal*0.07
+                             else 0 end 지원금
+                    from emp e 
+                    join dept d using(deptno)) t on m.ename = t.ename
+    order by 지원금 desc
+;
+```
+
+#### 실행 결과
+![12](https://user-images.githubusercontent.com/116356234/233885460-8ed08d78-1f03-476b-a253-18a8a6487465.png)  
   
 </div>
 </details>
@@ -1669,6 +1979,423 @@ SELECT TO_CHAR(SYSDATE, 'YYYY') FROM DUAL;
 <details>
 <summary><h3>1️⃣ SELECT(펼쳐보기 🖱️) </h3></summary>
 <div markdown="1">
+  
+#### 문제1
+![1](https://user-images.githubusercontent.com/116356234/233886694-569b07d4-0e4f-4742-978a-20e9dcdb30f5.png)
+
+
+#### 내 코드
+```SQL
+SELECT * FROM JOB;
+```
+
+#### 실행 결과
+![1](https://user-images.githubusercontent.com/116356234/233890186-def09a67-8ebd-4e89-ae8a-bd3aafe583dd.png)
+
+  
+<hr>
+
+#### 문제2
+![2](https://user-images.githubusercontent.com/116356234/233886697-dea86be4-2ac1-4a81-b1c6-486c1aab9ace.png)
+
+
+#### 내 코드
+```SQL
+SELECT JOB_NAME FROM JOB;  
+```
+  
+#### 실행 결과
+![2](https://user-images.githubusercontent.com/116356234/233890191-3491ae6e-dc6b-4934-96d5-3c11e0bcf9e1.png)
+
+
+<hr>
+
+#### 문제3
+![3](https://user-images.githubusercontent.com/116356234/233886699-243bf730-1dbd-4072-b335-6d5b07c02ebc.png)
+
+
+#### 내 코드
+```SQL
+SELECT * FROM DEPARTMENT;
+```
+
+#### 실행 결과
+![3](https://user-images.githubusercontent.com/116356234/233890192-c038d55f-9eab-4404-a385-3ee187d96cc8.png)
+
+
+<hr>
+
+#### 문제4
+![4](https://user-images.githubusercontent.com/116356234/233886700-584b024e-9e13-432c-8229-318fc8dc120b.png)
+
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME, EMAIL, PHONE, HIRE_DATE FROM EMPLOYEE;
+```
+
+#### 실행 결과
+![4](https://user-images.githubusercontent.com/116356234/233890194-3e214869-e7ee-4d24-a5a5-1e8e77f0ffb7.png)
+
+
+<hr>
+
+#### 문제5
+![5](https://user-images.githubusercontent.com/116356234/233886703-38a1f0fa-7924-4e88-b934-640caa47046c.png)
+
+
+#### 내 코드
+```SQL
+SELECT HIRE_DATE, EMP_NAME, SALARY FROM EMPLOYEE;
+```
+
+#### 실행 결과
+![5](https://user-images.githubusercontent.com/116356234/233890197-068b7d58-21b9-4a33-8bb7-5200cff03b3c.png)
+
+
+<hr>
+
+#### 문제6
+![6](https://user-images.githubusercontent.com/116356234/233886710-94182f60-ba08-4a4d-a23f-e21814f42571.png)
+
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME, SALARY*12
+, SALARY*12*(1+NVL(BONUS, 0))
+, SALARY*12*(1+NVL(BONUS, 0)- 0.03) 
+    FROM EMPLOYEE
+;
+```
+
+#### 실행 결과
+![6](https://user-images.githubusercontent.com/116356234/233890198-95bea5ee-0e95-4357-8c2e-bc6ac667cd62.png)
+
+
+<hr>
+
+#### 문제7
+![7_1](https://user-images.githubusercontent.com/116356234/233886716-d7e1635e-bd69-46aa-b93a-cf2901b5a886.png)
+
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME, SALARY, HIRE_DATE, PHONE
+    FROM EMPLOYEE
+    WHERE SAL_LEVEL = 'S1'
+;
+```
+
+#### 실행 결과
+![7](https://user-images.githubusercontent.com/116356234/233890200-00e8ba52-cc5d-46a8-94d0-8a7a1519cb90.png)
+
+
+<hr>
+
+#### 문제8
+![8_1](https://user-images.githubusercontent.com/116356234/233886718-25a7c923-e11a-47e8-aef1-46629b3fbba6.png)
+
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME
+, SALARY
+, SALARY*12*(1+NVL(BONUS, 0)- 0.03)
+, HIRE_DATE 
+    FROM EMPLOYEE
+    WHERE SALARY*12*(1+NVL(BONUS, 0)- 0.03) > 50000000
+;
+```
+
+#### 실행 결과
+![8](https://user-images.githubusercontent.com/116356234/233890203-760cd161-41e6-45bc-beda-6d9955b0d8dc.png)
+
+
+<hr>
+
+#### 문제9
+![9_1](https://user-images.githubusercontent.com/116356234/233886719-446901bd-0482-4447-be45-1cb23e73acb0.png)
+
+
+#### 내 코드
+```SQL
+SELECT *
+    FROM EMPLOYEE
+    WHERE SALARY >= 4000000 AND JOB_CODE = 'J2'
+;
+```
+
+#### 실행 결과
+![9](https://user-images.githubusercontent.com/116356234/233890205-e565341e-8bf5-4645-8c88-5f7fdcd4a8f8.png)
+  
+
+<hr>
+
+#### 문제10
+![10](https://user-images.githubusercontent.com/116356234/233886721-c0784a33-967c-4c0a-a4d6-569372732dfd.png)
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME, DEPT_CODE, HIRE_DATE
+    FROM EMPLOYEE
+    WHERE DEPT_CODE IN('D9','D5') AND (HIRE_DATE < '02/01/01')
+;
+```
+
+#### 실행 결과
+![10](https://user-images.githubusercontent.com/116356234/233890208-09c98a2d-7169-4607-8b3f-476418b7a1fd.png)
+  
+#### 문제11
+![11](https://user-images.githubusercontent.com/116356234/233886722-2a36a309-e9c1-49b7-bbe4-dbf0633396ab.png)
+
+
+#### 내 코드
+```SQL
+SELECT *
+    FROM EMPLOYEE
+    WHERE HIRE_DATE BETWEEN '90/01/01' AND '01/01/01'
+;
+```
+
+#### 실행 결과
+![11](https://user-images.githubusercontent.com/116356234/233890209-0c983612-3269-4414-893a-925e00109c05.png)
+
+  
+<hr>
+
+#### 문제12
+![12_1](https://user-images.githubusercontent.com/116356234/233886723-0183b026-75a6-41cc-9cfa-2d40763f8e49.png)
+
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME
+    FROM EMPLOYEE
+    WHERE EMP_NAME LIKE '%연'
+;  
+```
+  
+#### 실행 결과
+![12](https://user-images.githubusercontent.com/116356234/233890210-e8e7770d-7a90-440e-9773-ddba8fb5c1ac.png)
+
+
+<hr>
+
+#### 문제13
+![13](https://user-images.githubusercontent.com/116356234/233886727-e46c573a-f044-41bb-bab3-31d9c9d67d5b.png)
+
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME, PHONE
+    FROM EMPLOYEE
+    WHERE PHONE NOT LIKE '010%'
+;
+```
+
+#### 실행 결과
+![13](https://user-images.githubusercontent.com/116356234/233890211-833874a0-3298-4b65-8523-f7894d58c1fe.png)
+
+
+<hr>
+
+#### 문제14
+![14_1](https://user-images.githubusercontent.com/116356234/233886729-7ff94ef1-4e21-4d49-823a-94843d5af349.png)
+
+
+#### 내 코드
+```SQL
+SELECT *
+    FROM EMPLOYEE
+    WHERE (EMAIL LIKE '____#_%' ESCAPE '#')
+    AND (DEPT_CODE IN('D9','D6'))
+    AND (HIRE_DATE BETWEEN '90/01/01' AND '00/12/01')
+    AND (SALARY > 2700000)
+;
+```
+
+#### 실행 결과
+![14](https://user-images.githubusercontent.com/116356234/233890212-53715504-a8aa-4663-8fda-ccbbad2545b5.png)
+
+
+<hr>
+
+#### 문제15
+![15](https://user-images.githubusercontent.com/116356234/233886734-05d5ccb2-1b4a-4ba4-a1c3-2ddd9d2fa9b6.png)
+
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME, SUBSTR(EMP_NO,1,2), SUBSTR(EMP_NO,3,2), SUBSTR(EMP_NO,5,2) 
+    FROM EMPLOYEE
+; 
+```
+
+#### 실행 결과
+![15](https://user-images.githubusercontent.com/116356234/233890214-c6b40af3-4abd-4248-ad7f-4bf47a95fdee.png)
+
+
+<hr>
+
+#### 문제16
+![16](https://user-images.githubusercontent.com/116356234/233886736-6a3a02d2-6bdf-4308-a46d-6f35995041e4.png)
+
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME, RPAD(SUBSTR(EMP_NO,1,7),14,'*') 
+    FROM EMPLOYEE
+;
+```
+
+#### 실행 결과
+![16](https://user-images.githubusercontent.com/116356234/233890216-f46caf58-145d-432e-980d-a4389bd88009.png)
+
+
+<hr>
+
+#### 문제17
+![17](https://user-images.githubusercontent.com/116356234/233886739-5ba5150b-2308-4e84-bc33-4fcade4c105c.png)
+
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME
+, ABS(FLOOR(MONTHS_BETWEEN(HIRE_DATE, SYSDATE)/12*365)) 근무일수1
+, ABS(FLOOR(MONTHS_BETWEEN(SYSDATE, HIRE_DATE)/12*365)) 근무일수2
+    FROM EMPLOYEE
+;
+```
+
+#### 실행 결과
+![17](https://user-images.githubusercontent.com/116356234/233890219-b77d3baa-e0bb-4ca4-886e-dc1eda94230f.png)
+
+
+<hr>
+
+#### 문제18
+![18](https://user-images.githubusercontent.com/116356234/233886742-04f56f76-e420-474c-9e70-14b3bba127df.png)
+
+
+#### 내 코드
+```SQL
+SELECT *
+    FROM EMPLOYEE
+    WHERE MOD(EMP_ID,2) = 1
+;
+```
+
+#### 실행 결과
+![18](https://user-images.githubusercontent.com/116356234/233890220-69bee236-d3f1-47ca-a227-7d959513b4cc.png)
+
+
+<hr>
+
+#### 문제19
+![19](https://user-images.githubusercontent.com/116356234/233886744-c1b37b0c-b0a8-49f1-9b14-9b8f1eab226b.png)
+
+
+#### 내 코드
+```SQL
+SELECT *
+    FROM EMPLOYEE
+    WHERE MONTHS_BETWEEN(SYSDATE, HIRE_DATE)/12 >= 20
+;
+
+```
+
+#### 실행 결과
+![19](https://user-images.githubusercontent.com/116356234/233890222-910eb202-64d6-4555-bcc9-c83fca2cb5b1.png)
+  
+
+<hr>
+
+#### 문제20
+![20](https://user-images.githubusercontent.com/116356234/233886745-66f30322-45b8-4cd5-9f82-5e45e069a61b.png)
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME, TO_CHAR(SALARY, '$9,999,999')
+    FROM EMPLOYEE
+;
+```
+
+#### 실행 결과
+![20](https://user-images.githubusercontent.com/116356234/233890224-09d2279c-c1b9-4d51-b62c-0e1a4fe85ad8.png)
+  
+
+<hr>
+
+#### 문제21
+![21](https://user-images.githubusercontent.com/116356234/233886747-98e5417e-cab1-40d5-afb3-e12a3c68a202.png)
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME
+, DEPT_CODE
+, SUBSTR(EMP_NO,1,2) ||'년'||SUBSTR(EMP_NO,3,2)||'월'||SUBSTR(EMP_NO,5,2)||'일' 생년월일
+, TO_CHAR(SYSDATE, 'YYYY') - (1900+SUBSTR(EMP_NO,1,2))
+    FROM EMPLOYEE
+;
+```
+
+#### 실행 결과
+![21](https://user-images.githubusercontent.com/116356234/233890227-4d03931e-5357-4f68-bef1-e70475e085bc.png)
+  
+
+<hr>
+
+#### 문제22
+![22](https://user-images.githubusercontent.com/116356234/233886749-496382cc-4369-44ee-9930-2958e222c5eb.png)
+
+#### 내 코드
+```SQL
+SELECT EMP_ID, EMP_NAME, DEPT_CODE, CASE WHEN DEPT_CODE = 'D5' THEN '총무부'
+              WHEN DEPT_CODE = 'D6' THEN '기획부'
+              WHEN DEPT_CODE = 'D9' THEN '영업부' 
+              END 부서
+    FROM EMPLOYEE
+    WHERE DEPT_CODE IN('D5','D6','D9') 
+    ORDER BY DEPT_CODE
+;
+```
+
+#### 실행 결과
+![22](https://user-images.githubusercontent.com/116356234/233890229-f6056cc4-5845-4f6a-ba1e-36ec3bc4e2bf.png)
+  
+
+<hr>
+
+#### 문제23
+![23](https://user-images.githubusercontent.com/116356234/233886750-71226a8f-d5c8-476e-b678-ea2bb7364b3b.png)
+
+#### 내 코드
+```SQL
+SELECT EMP_NAME, SUBSTR(EMP_NO,1,6), SUBSTR(EMP_NO,8), SUBSTR(EMP_NO,1,6)+SUBSTR(EMP_NO,8)
+    FROM EMPLOYEE
+    WHERE EMP_ID = '201'
+;
+```
+
+#### 실행 결과
+![23](https://user-images.githubusercontent.com/116356234/233890230-702fcd31-d978-4718-af29-cdfcd7a5b207.png)
+  
+
+<hr>
+
+#### 문제24
+![24](https://user-images.githubusercontent.com/116356234/233886751-ae160cbc-306c-4de3-8af3-6702d6b9080d.png)
+
+#### 내 코드
+```SQL
+SELECT SUM((SALARY*(1+NVL(BONUS, 0)))*12) "Total" 
+    FROM EMPLOYEE
+    WHERE DEPT_CODE = 'D5'
+;
+```
+
+#### 실행 결과
+![24](https://user-images.githubusercontent.com/116356234/233890231-80a2c8cd-8d3d-4edb-8b87-1e8183d58ba9.png)  
   
 </div>
 </details>
