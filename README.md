@@ -1717,6 +1717,7 @@ select e.*, s.grade
 ```
 
 #### 실행 결과
+![1](https://user-images.githubusercontent.com/116356234/233885440-e576aeb3-e1d7-46cd-a7b4-69d42f107154.png)
 
   
 <hr>
@@ -1736,6 +1737,7 @@ select e.*, s.grade
 ```
   
 #### 실행 결과
+![2](https://user-images.githubusercontent.com/116356234/233885443-48c89265-70ea-4c3e-8f6d-21b2300764d0.png)
 
 
 <hr>
@@ -1756,6 +1758,7 @@ select s.grade, avg(sal*12+nvl(comm,0)) 평균연봉
 ```
 
 #### 실행 결과
+![3](https://user-images.githubusercontent.com/116356234/233885444-213a1644-60d9-4fd8-b5dd-3a4cce6863d6.png)
 
 
 <hr>
@@ -1775,6 +1778,7 @@ select deptno, floor(avg(sal*12+nvl(comm,0))) 평균연봉
 ```
 
 #### 실행 결과
+![4](https://user-images.githubusercontent.com/116356234/233885446-aa9e7ab8-a4df-40fe-a1c4-8324c2f6a6c8.png)
 
 
 <hr>
@@ -1792,6 +1796,7 @@ select empno, ename, job, mgr,
 ```
 
 #### 실행 결과
+![5](https://user-images.githubusercontent.com/116356234/233885447-6dace550-3d94-476b-9a74-d48288ce0689.png)
 
 
 <hr>
@@ -1810,6 +1815,7 @@ select empno, ename, job, mgr,
 ```
 
 #### 실행 결과
+![6](https://user-images.githubusercontent.com/116356234/233885450-5cd4b63b-7c81-40cb-a648-9e38284db0d2.png)
 
 
 <hr>
@@ -1828,7 +1834,7 @@ select *
 ```
 
 #### 실행 결과
-
+![7](https://user-images.githubusercontent.com/116356234/233885452-02c0d8d6-5ed7-44c3-8601-eaca841aa0a9.png)
 
 <hr>
 
@@ -1846,6 +1852,8 @@ select ename, (select ename from emp where empno = e.mgr) manager
 ```
 
 #### 실행 결과
+![8](https://user-images.githubusercontent.com/116356234/233885453-0c21171d-1ac2-47dc-a42c-79df80d8388a.png)
+
 
 
 <hr>
@@ -1886,7 +1894,8 @@ select grade, ename
 ```
 
 #### 실행 결과
-  
+![9](https://user-images.githubusercontent.com/116356234/233885454-56dd2910-c852-4966-b4e3-5cceba4b6e88.png)
+
 
 <hr>
 
@@ -1903,7 +1912,8 @@ select s.grade, min(sal) min_sal, max(sal) max_sal, round(avg(sal), 2) avg_sal
 ```
 
 #### 실행 결과
-  
+![10](https://user-images.githubusercontent.com/116356234/233885455-8972e8a4-e33c-4b4c-a3bf-f80b19e794ae.png)
+
 
 <hr>
 
@@ -1923,7 +1933,7 @@ from emp m join (select grade , avg(e.sal) a_sal
 ```
 
 #### 실행 결과
-  
+![11](https://user-images.githubusercontent.com/116356234/233885457-38d3d70f-3159-4d04-bfeb-48123237a055.png)    
 
 <hr>
 
@@ -1957,6 +1967,7 @@ select empno, m.ename, sal, sal+지원금 총급여
 ```
 
 #### 실행 결과
+![12](https://user-images.githubusercontent.com/116356234/233885460-8ed08d78-1f03-476b-a253-18a8a6487465.png)  
   
 </div>
 </details>
