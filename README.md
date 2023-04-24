@@ -1986,7 +1986,7 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT * FROM JOB;
 ```
 
 #### 실행 결과
@@ -2000,7 +2000,7 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-  
+SELECT JOB_NAME FROM JOB;  
 ```
   
 #### 실행 결과
@@ -2014,7 +2014,7 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT * FROM DEPARTMENT;
 ```
 
 #### 실행 결과
@@ -2028,7 +2028,7 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME, EMAIL, PHONE, HIRE_DATE FROM EMPLOYEE;
 ```
 
 #### 실행 결과
@@ -2042,7 +2042,7 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT HIRE_DATE, EMP_NAME, SALARY FROM EMPLOYEE;
 ```
 
 #### 실행 결과
@@ -2056,7 +2056,11 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME, SALARY*12
+, SALARY*12*(1+NVL(BONUS, 0))
+, SALARY*12*(1+NVL(BONUS, 0)- 0.03) 
+    FROM EMPLOYEE
+;
 ```
 
 #### 실행 결과
@@ -2070,7 +2074,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME, SALARY, HIRE_DATE, PHONE
+    FROM EMPLOYEE
+    WHERE SAL_LEVEL = 'S1'
+;
 ```
 
 #### 실행 결과
@@ -2084,7 +2091,13 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME
+, SALARY
+, SALARY*12*(1+NVL(BONUS, 0)- 0.03)
+, HIRE_DATE 
+    FROM EMPLOYEE
+    WHERE SALARY*12*(1+NVL(BONUS, 0)- 0.03) > 50000000
+;
 ```
 
 #### 실행 결과
@@ -2098,7 +2111,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM EMPLOYEE
+    WHERE SALARY >= 4000000 AND JOB_CODE = 'J2'
+;
 ```
 
 #### 실행 결과
@@ -2111,7 +2127,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME, DEPT_CODE, HIRE_DATE
+    FROM EMPLOYEE
+    WHERE DEPT_CODE IN('D9','D5') AND (HIRE_DATE < '02/01/01')
+;
 ```
 
 #### 실행 결과
@@ -2122,7 +2141,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM EMPLOYEE
+    WHERE HIRE_DATE BETWEEN '90/01/01' AND '01/01/01'
+;
 ```
 
 #### 실행 결과
@@ -2136,7 +2158,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-  
+SELECT EMP_NAME
+    FROM EMPLOYEE
+    WHERE EMP_NAME LIKE '%연'
+;  
 ```
   
 #### 실행 결과
@@ -2150,7 +2175,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME, PHONE
+    FROM EMPLOYEE
+    WHERE PHONE NOT LIKE '010%'
+;
 ```
 
 #### 실행 결과
@@ -2164,7 +2192,13 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM EMPLOYEE
+    WHERE (EMAIL LIKE '____#_%' ESCAPE '#')
+    AND (DEPT_CODE IN('D9','D6'))
+    AND (HIRE_DATE BETWEEN '90/01/01' AND '00/12/01')
+    AND (SALARY > 2700000)
+;
 ```
 
 #### 실행 결과
@@ -2178,7 +2212,9 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME, SUBSTR(EMP_NO,1,2), SUBSTR(EMP_NO,3,2), SUBSTR(EMP_NO,5,2) 
+    FROM EMPLOYEE
+; 
 ```
 
 #### 실행 결과
@@ -2192,7 +2228,9 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME, RPAD(SUBSTR(EMP_NO,1,7),14,'*') 
+    FROM EMPLOYEE
+;
 ```
 
 #### 실행 결과
@@ -2206,7 +2244,11 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME
+, ABS(FLOOR(MONTHS_BETWEEN(HIRE_DATE, SYSDATE)/12*365)) 근무일수1
+, ABS(FLOOR(MONTHS_BETWEEN(SYSDATE, HIRE_DATE)/12*365)) 근무일수2
+    FROM EMPLOYEE
+;
 ```
 
 #### 실행 결과
@@ -2220,7 +2262,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT *
+    FROM EMPLOYEE
+    WHERE MOD(EMP_ID,2) = 1
+;
 ```
 
 #### 실행 결과
@@ -2234,6 +2279,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
+SELECT *
+    FROM EMPLOYEE
+    WHERE MONTHS_BETWEEN(SYSDATE, HIRE_DATE)/12 >= 20
+;
 
 ```
 
@@ -2247,7 +2296,9 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME, TO_CHAR(SALARY, '$9,999,999')
+    FROM EMPLOYEE
+;
 ```
 
 #### 실행 결과
@@ -2260,7 +2311,12 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME
+, DEPT_CODE
+, SUBSTR(EMP_NO,1,2) ||'년'||SUBSTR(EMP_NO,3,2)||'월'||SUBSTR(EMP_NO,5,2)||'일' 생년월일
+, TO_CHAR(SYSDATE, 'YYYY') - (1900+SUBSTR(EMP_NO,1,2))
+    FROM EMPLOYEE
+;
 ```
 
 #### 실행 결과
@@ -2273,7 +2329,14 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_ID, EMP_NAME, DEPT_CODE, CASE WHEN DEPT_CODE = 'D5' THEN '총무부'
+              WHEN DEPT_CODE = 'D6' THEN '기획부'
+              WHEN DEPT_CODE = 'D9' THEN '영업부' 
+              END 부서
+    FROM EMPLOYEE
+    WHERE DEPT_CODE IN('D5','D6','D9') 
+    ORDER BY DEPT_CODE
+;
 ```
 
 #### 실행 결과
@@ -2286,7 +2349,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT EMP_NAME, SUBSTR(EMP_NO,1,6), SUBSTR(EMP_NO,8), SUBSTR(EMP_NO,1,6)+SUBSTR(EMP_NO,8)
+    FROM EMPLOYEE
+    WHERE EMP_ID = '201'
+;
 ```
 
 #### 실행 결과
@@ -2299,7 +2365,10 @@ select empno, m.ename, sal, sal+지원금 총급여
 
 #### 내 코드
 ```SQL
-
+SELECT SUM((SALARY*(1+NVL(BONUS, 0)))*12) "Total" 
+    FROM EMPLOYEE
+    WHERE DEPT_CODE = 'D5'
+;
 ```
 
 #### 실행 결과
